@@ -1,0 +1,49 @@
+body{
+    background-color: #222;
+    color: white;
+    margin: 0;
+    font-family: serif;
+}
+.contacts{
+    display: table;
+    
+}
+.contacts ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.contacts .avatar{
+    display: table-cell;
+}
+.contacts .avatar img{
+height: 3em;
+}
+.contacts .avatar .status{
+    display: inline-block;
+    height: 0.4em;
+    width: 0.4em;
+    
+    border-radius: 1em;
+    margin-left: -0.8em;
+}
+.status.off{
+    border: 1px solid grey;
+    background-color: #444;  
+}
+.status.on{
+    border: 1px solid lightgreen;
+    background-color: green;
+}
+.contacts .info{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 0.5em;
+}
+.contacts .info .name{
+    display: table-row;
+}
+.contacts .info .text{
+    display: table-row;
+    color: #666;
+}
