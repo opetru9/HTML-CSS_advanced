@@ -6,17 +6,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="contacts">
+    <nav class="contacts" id="contacts">
          <h2>My contacts</h2>
          <ul>
-            <li>
-                <span class="avatar"> <!-- acest 'span' l-as inlocui cu <figure> ca fiind un element semantic mai potrivit pentru o poza -->
-                    <img src="img/avatar1.png" alt="jon smith">
-                    <span class="status on"></span> <!-- acest 'span' l-as inlocui cu <aside> deoarece este 'o sectiune cu continut suplimentar' ce se refera la user din contact list --> 
+            <li id="contact1">
+                <span class="alt-detailis" id="alt-detailis">
+                    <div>
+                    <a href="#">Delete</a>
+                    <a href="#">Block</a>
+                    </div>
+                    <a href="#contacts">
+                        <img src="https://icons.iconarchive.com/icons/steve/zondicons/48/Dots-Horizontal-Triple-icon.png" alt="">
+                    </a>
                 </span>
+                <figure class="avatar">
+                    <img src="img/avatar1.png" alt="jon smith">
+                    <aside class="status on"></aside> 
+                </figure>
                 <span class="info">
                     <span class="name">Jon Smith</span>
                     <span class="text">Hi, bro !!!</span>
+                </span>
+                <span class="action">
+                    <a href="#contact1" class="add">+</a>
+                </span>
+                <span class="add-detailis">
+                    <div>
+                    <a href="#">Add friend</a>
+                    <a href="#">Follow</a>
+                    </div>
                 </span>
             </li>
          </ul>

@@ -1,17 +1,61 @@
 body{
     background-color: #222;
     color: white;
-    margin: 0;
+    margin-left: 0.25em;
     font-family: serif;
 }
 .contacts{
     display: table;
-    
 }
 .contacts ul{
     list-style: none;
     padding: 0;
     margin: 0;
+}
+.contacts li{
+    display: table-row;
+    transition: 0.5s;
+}
+.contacts li>*{
+    transition: 0.5s;
+}
+.contacts li .alt-detailis a>img{  
+    width: 1.5em;
+    height: 1.5em;
+    transform: translateY(-0.4em);
+    border: 1px solid white;
+    border-radius: 0.5em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    transition: 0.5s;
+    padding: 0.1em;
+}
+.contacts li span:first-of-type>div{
+    display: inline-block;
+    transform: translateY(-0.9em);
+    margin-left: -7em;
+    transition: 1s;
+
+}
+.contacts li span:first-of-type>div>a{
+    text-decoration: none;
+    color: #ddd;
+    padding: 0.3em;
+}
+.contacts li span:first-of-type>div>a:first-of-type{
+    border: 1px solid #555;
+    border-radius: 10px;
+    background-color: #444;
+}
+.contacts li span:first-of-type>div>a:nth-child(2){
+    border: 1px solid #555;
+    border-radius: 10px;
+    background-color: #444;
+    color: rgb(255, 0, 0);
+}
+.contacts:target  li {
+    transform: translateX(7em);
+    transition: 0.5s;
 }
 .contacts .avatar{
     display: table-cell;
@@ -47,3 +91,61 @@ height: 3em;
     display: table-row;
     color: #666;
 }
+.contacts .action a.add{
+    display: block;
+    text-decoration: none;
+    background-color: #111;
+    color: #ddd;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    transform: translatey(-0.8em)translateX(3em);
+    border: 1px solid #222;
+    border-radius: 3em;
+}
+.contacts .action a.add:hover{
+    background-color: #151515;
+    color: white;
+}
+.contacts li .add-detailis{
+    display: table-cell;   
+}
+.contacts li .add-detailis>div{
+    white-space: nowrap;
+    width: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    transform: translateX(3em)translateY(-1em);
+}
+.contacts li:target .add-detailis>div{
+    width: 100%;
+    transform: translateX(6em)translateY(-1em);
+}
+.contacts li .add-detailis>div>a{
+    text-decoration: none;
+    padding: 0.5em;
+    color: #ddd;
+}
+.contacts li .add-detailis>div>a:first-child{
+    border: 2px solid black;
+    border-radius: 5em;
+}
+.contacts li .add-detailis>div>a:nth-child(2){
+    border: 2px solid black;
+    border-radius: 5em;
+}
+.contacts li:target > *{
+    transform: translateX(-11em);
+    
+}
+.contacts li:target .action .add{
+    transform: translateX(-6em)translateY(-0.8em);
+    transition: 0.5s;  
+}
+.contacts li:target .alt-detailis a>img{
+    transform: translateX(-10em);
+    transition: 0.5s;
+}
+
+
