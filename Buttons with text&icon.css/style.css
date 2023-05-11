@@ -12,6 +12,8 @@ body{
     background-color: rgb(2, 97, 2);
 
 }
+.btn:hover{
+    background-color: rgb(6, 172, 6);
 .btns-a{
     display: block;
     text-decoration: none;
@@ -42,6 +44,8 @@ body{
     text-align: left;
     background-color: rgb(7, 159, 247);
 }
+ .btn-cloud:hover{
+    background-color:rgb(6, 125, 194) ;   
 .btn-cloud a{
     color:white;
     text-decoration: none;
