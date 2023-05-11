@@ -44,6 +44,7 @@ section h1{
 .employee-card .colapse{
     height: 0;
     overflow: hidden;
+    transition: 0.5s;
 }
 .employee-card:target .colapse{
     height: 120px;
