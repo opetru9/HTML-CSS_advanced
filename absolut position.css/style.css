@@ -1,0 +1,33 @@
+body{
+    background-color: #222;
+}
+.parent{
+    /*border: 1px solid darkgoldenrod;*/
+    display: inline-block;
+    padding: 10px;
+}
+.parent div{
+    width: 150px;
+    height: 150px;
+}
+.parent .n1{
+    background-color: #555;
+    position: absolute;
+    top: 160px;
+    left: 160px;
+    z-index: 1;
+}
+.parent .n2{
+    background-color: #888;
+    position: absolute;
+    top: 80px;
+    left:80px;
+    z-index: 0;
+}
+.parent .n3{
+    background-color: #bbb;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
