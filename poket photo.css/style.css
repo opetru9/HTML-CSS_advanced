@@ -1,0 +1,60 @@
+.pal{
+    color:#50B4BF;
+    color:#C4EEF2;
+    color:#D9A25F;
+    color:#D99B66;
+    color:#592202;
+}
+html{
+    height: 100%;
+}
+body{
+    background-image: linear-gradient(#50B4BF,#C4EEF2);
+    height: 100%;
+}
+.poket{
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+
+    border: 2px dashed #D9A25F;
+    border-top: none;
+    border-right:none ;
+    width: 40%;
+    height: 40%;
+    background-image: linear-gradient(45deg,#592202 50%, transparent 51%);
+    box-shadow: -5px 5px 4px 2px;
+
+}
+.poket img{
+    width: 110%;
+    height: 110%;
+
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+
+    border: 20px solid #ecf1f1 ;
+    transform-origin: left bottom;
+    box-shadow: 0 0 3px 1px #408e97 ;
+}
+.poket img:nth-child(1){
+    transform: rotate(-2.5deg);
+
+}
+.poket img:nth-child(3){
+    transform: rotate(2.5deg);
+}
+.poket .top{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+
+    border: 2px dashed #D9A25F;
+    border-top: none;
+    border-right: none;
+    width: 50%;
+    height: 50%;
+    background-image: linear-gradient(45deg, #592202 48%, transparent 51%);
+    box-shadow: -5px 5px 4px 2px;
+}
