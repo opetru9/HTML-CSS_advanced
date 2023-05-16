@@ -1,0 +1,151 @@
+HTML{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+    color: rgb(53, 56, 56);
+    background-color: rgba(2, 43, 29, 0.842);
+}
+header{
+    position: absolute;
+    z-index: 1;
+    margin-top: -37px;
+}
+header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    font-weight: lighter;
+    color: aqua;
+    margin-top: 55px;
+}
+header h2{
+    text-align: center;
+    color: rgb(8, 250, 169);
+    font-size: 35px;
+}
+header p{
+    text-align: center;
+    color: rgb(10, 248, 169);
+    font-size: 25px;
+}
+header,section{
+    height: 70%;
+}
+#form{
+    color: aliceblue;
+    transform: translateY(-170px);
+    position: absolute;
+        z-index: 1;
+        top: 470px;
+        left: 400px;
+}
+section form{
+    /*padding: 75px;*/
+    text-align: center;
+}
+section h1{
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+section form .data{
+    display: inline-block;
+    padding: 25px;
+    margin-left: -90px;
+}
+section form .data div{
+    padding: 10px;
+    font-weight: bolder;
+    text-align: right;
+}
+section form .select{
+    display: inline-block;
+    padding: 25px;
+}
+section form .select input,select{
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: rgba(127, 255, 212, 0.596);
+
+}
+section form .select input{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+section form button{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-image: radial-gradient(aqua 5%,rgb(30, 158, 47)80%,aqua );
+    border-radius: 10px;
+    border: 1px solid transparent;
+    
+
+}
+section form button:hover{
+    background-color: #555;
+    background-image: radial-gradient(rgb(2, 77, 77) 5%, rgb(12, 61, 19)80%, rgb(3, 90, 90));
+    box-shadow: 0 0 2px 2px rgb(0, 119, 128);
+
+}
+footer{
+    width: 100%;
+    text-align: center;
+    margin-top: -215px;
+    background-color: rgba(2, 59, 40, 0.788);
+    position: absolute;
+        z-index: 1;
+        top: 946px;
+        left: 0px;
+}
+footer .info{
+    display: inline-block;
+    text-align: left;
+    margin-right: 100px;
+}
+footer .info h3{
+    padding-left: 30px;
+    color: #000;
+}
+footer .info ul li{
+    list-style: none;
+}
+footer .terms{
+    display: inline-block;
+    transform: translatey(-18px);
+    text-align: left;
+}
+footer .terms h3{
+    padding-left: 30px;
+    color: #000;
+}
+footer .terms ul li {
+    list-style: none;
+}
+footer .info ul li a{
+    text-decoration: none;
+    color: #111;
+}
+footer .terms ul li a {
+    text-decoration: none;
+    color: #111;
+}
+section#background{
+   position: absolute; 
+   z-index: -1;
+   top: -60px;
+
+   height: 128%;
+   width: 100%;
+}
+.under{
+    height: 143%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    background-color: #0808089a;
+}
