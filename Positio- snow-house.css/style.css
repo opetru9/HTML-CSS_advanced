@@ -1,0 +1,292 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    overflow: hidden;
+}
+.bg{
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    background-image: url(img/lake-house-winter-snow-forrest.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70% ;
+
+    animation: day-night 20s infinite;
+}
+.window-water{
+     width: 2%;
+    height: 7%;
+
+    background-image: radial-gradient(orange, transparent);
+
+    position: absolute;
+    top: 65%;
+    left: 69%; 
+    
+    mix-blend-mode: soft-light;
+    filter: brightness(120%);
+
+    animation: lights 3s infinite linear;
+}
+
+.window{
+    width: 3%;
+    height: 8%;
+        
+    background-image: radial-gradient(orange, transparent);
+        
+    position: absolute;
+    top: 37%;
+    left: 68.5%;
+
+    mix-blend-mode: soft-light;
+    filter: brightness(170%);
+
+    animation: lights 3s infinite linear;
+}
+.door-water{
+    width: 2%;
+    height: 6%;
+
+    background-image: radial-gradient(orange,transparent);
+
+    position: absolute;
+    top: 66%;
+    left: 62%;
+
+    mix-blend-mode: soft-light;
+    filter: brightness(120%);
+
+    animation: lights 4s infinite linear;
+}
+.door{
+    width: 4%;
+    height: 10%;
+
+    background-image: radial-gradient(orange, transparent);
+
+    border-radius: 15px;
+
+    position: absolute;
+    top: 38%;
+    left: 61%;
+
+    mix-blend-mode: soft-light;
+    filter: brightness(170%);
+
+    animation: lights 4s infinite linear;
+}
+.snow{
+    background-color: #11111107;
+
+    height: 95%;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    animation: day-night 20s infinite;
+}
+.snow .flake{
+    position: absolute;
+    top: -5%;
+
+    width: 17px;
+    height: 17px;
+
+    background-image: radial-gradient(white, transparent);
+    /*background-color: white;*/
+    
+    border-radius: 100%;
+}
+.snow .flake.small{
+    width: 9px;
+    height: 9px;
+
+    animation-duration: 30s;
+}
+.snow .flake:nth-child(3n){
+    animation: flake-animation-1 25s infinite linear;
+}
+.snow .flake:nth-child(2n) {
+    animation: flake-animation-2 20s infinite linear;
+}
+.snow .flake:nth-child(1) {
+    left: 37%;
+    animation-delay: 6.5s;
+    animation: flake-animation-2 19s infinite linear;
+}
+.snow .flake:nth-child(2){
+    left: 19%;
+    animation-delay: 12.5s;
+}
+.snow .flake:nth-child(3){
+    left: 96%;
+    animation-delay: 15.5s;
+}
+.snow .flake:nth-child(4){
+    left: 82%;
+    animation-delay: 9.5s;
+}
+.snow .flake:nth-child(5){
+    left: 75%;
+    animation-delay: 5.5s;
+}
+.snow .flake:nth-child(6){
+    left: 30%;
+    animation-delay: 1.5s;
+}
+.snow .flake:nth-child(7){
+    left: 44%;
+    animation-delay: 1.5s;
+    animation: flake-animation-2 26s infinite linear;
+}
+.snow .flake:nth-child(8){
+    left: 52%;
+    animation-delay: 7.5s;
+}
+.snow .flake:nth-child(9){
+    left: 15%;
+    animation-delay: 1.5s;
+}
+.snow .flake:nth-child(10){
+    left: 25%;
+    animation-delay: 16.5s;
+}
+.snow .flake.small:nth-child(11){
+    left: 65%;
+    animation-delay: 5.5s;
+    animation: flake-animation-2 15s infinite linear;
+}
+.snow .flake.small:nth-child(12){
+    left: 48%;
+    animation-delay: 22.5s;
+}
+.snow .flake.small:nth-child(13){
+    left: 19%;
+    animation-delay: 8.5s;
+}
+.snow .flake.small:nth-child(14){
+    left: 5%;
+    animation-delay: 4.5s;
+}
+.snow .flake.small:nth-child(15){
+    left: 3%;
+    animation-delay: 17.5s;
+}
+.snow .flake.small:nth-child(16){
+    left: 9%;
+    animation-delay: 2.5s;
+}
+.snow .flake.small:nth-child(17){
+    left: 55%;
+    animation-delay: 16.5s;
+    animation: flake-animation-2 25s infinite linear;
+}
+.snow .flake.small:nth-child(18){
+    left: 78%;
+    animation-delay: 17.5s;
+}
+.snow .flake.small:nth-child(19){
+    left: 95%;
+    animation-delay: 6.5s;
+    animation: flake-animation-1 28s infinite linear;
+}
+.snow .flake.small:nth-child(20){
+    left: 35%;
+    animation-delay: 8s;
+}
+@keyframes flake-animation-1{
+    from{top:-5%;
+        opacity: 1;
+    }
+    40% {
+            transform: translateX(-40px);
+            opacity: 1;
+        }
+    
+    60% {
+            transform: translateX(40px);
+        }
+    
+    90%{
+        top: 100%;
+        opacity: 0.5;
+        transform: translateX(0px);
+    }
+
+    to{top: 100%;
+        opacity: 0;
+    }
+}
+@keyframes flake-animation-2 {
+    from {
+        top: -5%;
+        opacity: 1;
+    }
+
+    40% {
+        transform: translateX(30px);
+        opacity: 1;
+    }
+
+    60%{
+        transform: translateX(-30px);
+    }
+    90% {
+        top: 98%;
+        opacity: 0.5;
+        transform: translateX(0px);
+        }
+
+    to {
+        top: 98%;
+        opacity: 0;
+    }
+}
+@keyframes day-night{
+    from{
+        filter: grayscale(0%) brightness(110%);
+    }
+    50%{
+        filter: grayscale(80%) brightness(20%);
+    }
+    to{
+        filter: grayscale(0%) brightness(110%);
+    }
+}
+@keyframes lights{
+    from{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0.7;
+    }
+    30%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0.8;
+    }
+    50%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0.8;
+    }
+    70%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0.7;
+    }
+    to{
+        opacity: 1;
+    }
+}
