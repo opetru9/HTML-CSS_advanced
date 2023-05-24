@@ -21,7 +21,7 @@ body{
     right: 0;
     bottom: 0;
     
-    animation: entrance 7s linear infinite;
+    animation: entrance 7s linear 1;
     transform-style: preserve-3d;
     transition: 5s;
 }
@@ -32,7 +32,6 @@ body{
     display: block;
 
     position: absolute;
-
 }
 #container i:nth-child(1){
     transform: translateZ(-8000px);
