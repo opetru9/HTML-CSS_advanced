@@ -1,0 +1,72 @@
+body{
+    background-color: #012;
+    overflow: hidden;
+}
+#container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    perspective: 500px;
+}
+.hearts{
+    width: 160px;
+    height: 160px;
+    
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    animation: entrance 7s linear infinite;
+    transform-style: preserve-3d;
+    transition: 5s;
+}
+#container i{
+    color: rgba(241, 16, 16, 0.63);
+    font-size:1000% ;
+
+    display: block;
+
+    position: absolute;
+
+}
+#container i:nth-child(1){
+    transform: translateZ(-8000px);
+    opacity: 0.9;
+}
+#container i:nth-child(2){
+    transform: translateZ(-4000px);
+    opacity: 0.7;
+}
+#container i:nth-child(3){
+    transform: translateZ(-2000px);
+    opacity: 0.6;
+}
+#container i:nth-child(4){
+    transform: translateZ(-1000px);
+    opacity: 0.5;
+}
+#container i:nth-child(5){
+    transform: translateZ(-500px);
+    opacity: 0.4;
+}
+#container i:nth-child(6){
+    transform: translateZ(-200px);
+    opacity: 0.3;
+}
+#container i:nth-child(7){
+    transform: translateZ(0px);
+}
+
+@keyframes entrance{
+    from{
+        transform: translateZ(-4000px);
+    }
+    to{
+        transform: translateZ(4000px);
+    }
+}
