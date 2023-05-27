@@ -56,6 +56,7 @@ body{
 }
 #modal #phone-nr select{
     height: 2em;
+    width: 4.1em;
 }
 #modal #phone-nr select:hover{
     border: transparent;
