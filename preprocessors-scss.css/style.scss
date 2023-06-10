@@ -1,0 +1,36 @@
+$color-dark:#888;
+$color-light:#ddd;
+
+body{
+    background-color: #212;
+    margin: 0;
+    height:  100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+figure{
+    // margin: 10vh auto;
+    // width: 500px;
+    img{
+        border: 5px solid darken($color-light,20%);
+        box-shadow: 0 0 2px 3px darken($color-light, 40%);
+        &:hover{
+            border: 5px solid darken($color-light, 30%);
+            box-shadow: 0 0 3px 4px darken($color-light, 50%);
+        }
+    }
+    figcaption{
+       text-align: center;
+       font-family: Arial, Helvetica, sans-serif;
+       h2{
+           margin-bottom: 0;
+           color:$color-light;
+       }
+       h3{
+           margin-top: 0;
+           color: $color-dark;
+       }
+    }
+}
