@@ -1,0 +1,54 @@
+$color-dark:#222;
+$color-light:green;
+$size:200px;
+
+body{
+    background-color: $color-dark;
+}
+button{
+    width: $size;
+    height: $size;
+    font-size: $size*0.12;
+
+    background-image:linear-gradient(
+                        $color-dark,
+                        $color-light,
+                        $color-dark
+                        );
+    color: lighten($color-dark,80%);
+
+    border: $size*0.02 solid darken($color-light, 30%) ;
+    border-radius: 100%;
+
+    outline: none;
+    cursor: pointer;
+
+    box-shadow: 0 0 $size*0.03 $size*0.01 darken($color-dark, 50%) ;
+    text-shadow: $size*0.01 $size*0.01 $size*0.01 darken($color-light, 30%);
+
+     &:hover {
+        background-image: linear-gradient(
+            $color-light,
+            $color-dark,
+            $color-light );
+        border-color: lighten($color-light, 10%);
+     }
+     &:active {
+        width: $size*0.95;
+        height: $size*0.95 ;
+        font-size: $size*0.15;
+        animation: active-animation 0.01s 100;
+     }
+}
+@keyframes active-animation{
+    from{
+        background-image: linear-gradient($color-light,
+        $color-dark,
+        $color-light );
+    }
+    to{
+        background-image: radial-gradient($color-light,
+        $color-dark,
+        $color-light );
+    }
+}
