@@ -1,0 +1,170 @@
+body {
+  background-image: radial-gradient(#2b2b2b, #111);
+  background-size: 100vh 100vw;
+  overflow: hidden;
+}
+
+.fan {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 35em;
+  height: 7em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.fan li {
+  padding: 2em;
+  width: 30em;
+  height: 3em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  transform-origin: 90%;
+  border-radius: 1em 60% 60% 1em;
+}
+.fan li::after {
+  content: "";
+  display: block;
+  width: 1em;
+  height: 1em;
+  background-color: #f7f7f7;
+  border-radius: 100%;
+  box-shadow: 0 0 0.1em 0.1em #777777;
+  position: absolute;
+  top: calc(50% - 0.5em);
+  right: 5%;
+}
+.fan li:nth-child(1) {
+  background-color: #000400;
+  transform: rotate(0deg);
+  box-shadow: 0 0 0.2em 0.1em #141414;
+  color: black;
+}
+.fan li:nth-child(2) {
+  background-color: #000700;
+  transform: rotate(0deg);
+  box-shadow: 0 0 0.2em 0.1em #161616;
+  color: black;
+}
+.fan li:nth-child(3) {
+  background-color: #000b00;
+  transform: rotate(0deg);
+  box-shadow: 0 0 0.2em 0.1em #191919;
+  color: #030706;
+}
+.fan li:nth-child(4) {
+  background-color: #000e00;
+  transform: rotate(0deg);
+  box-shadow: 0 0 0.2em 0.1em #1b1b1b;
+  color: #06130f;
+}
+.fan li:nth-child(5) {
+  background-color: #001200;
+  transform: rotate(0deg);
+  box-shadow: 0 0 0.2em 0.1em #1e1e1e;
+  color: #0a1e18;
+}
+.fan li:nth-child(6) {
+  background-color: #001500;
+  transform: rotate(0deg);
+  box-shadow: 0 0 0.2em 0.1em #202020;
+  color: #0e2a21;
+}
+.fan li:nth-child(7) {
+  background-color: #001900;
+  transform: rotate(0deg);
+  box-shadow: 0 0 0.2em 0.1em #232323;
+  color: #123529;
+}
+.fan li:nth-child(8) {
+  background-color: #001d00;
+  transform: rotate(0deg);
+  box-shadow: 0 0 0.2em 0.1em #252525;
+  color: #164132;
+}
+.fan li:nth-child(9) {
+  background-color: #002000;
+  transform: rotate(0deg);
+  box-shadow: 0 0 0.2em 0.1em #282828;
+  color: #1a4c3b;
+}
+.fan li:nth-child(10) {
+  background-color: #002400;
+  transform: rotate(0deg);
+  box-shadow: 0 0 0.2em 0.1em #2b2b2b;
+  color: #1d5844;
+}
+.fan li:nth-child(11) {
+  background-color: #002700;
+  transform: rotate(0deg);
+  box-shadow: 0 0 0.2em 0.1em #2d2d2d;
+  color: #21634d;
+}
+.fan li:nth-child(12) {
+  background-color: #002b00;
+  transform: rotate(0deg);
+  box-shadow: 0 0 0.2em 0.1em #303030;
+  color: #256f56;
+}
+.fan li:nth-child(13) {
+  background-color: #002e00;
+  transform: rotate(0deg);
+  box-shadow: 0 0 0.2em 0.1em #323232;
+  color: #297a5f;
+}
+.fan h2, .fan p {
+  padding: 0;
+  margin: 0;
+  color: rgb(41, 122, 95);
+}
+.fan:hover li {
+  font-size: 0.6em;
+  transition: 2s;
+}
+.fan:hover li:nth-child(1) {
+  transform: rotate(90deg);
+}
+.fan:hover li:nth-child(2) {
+  transform: rotate(75deg);
+}
+.fan:hover li:nth-child(3) {
+  transform: rotate(60deg);
+}
+.fan:hover li:nth-child(4) {
+  transform: rotate(45deg);
+}
+.fan:hover li:nth-child(5) {
+  transform: rotate(30deg);
+}
+.fan:hover li:nth-child(6) {
+  transform: rotate(15deg);
+}
+.fan:hover li:nth-child(7) {
+  transform: rotate(0deg);
+}
+.fan:hover li:nth-child(8) {
+  transform: rotate(-15deg);
+}
+.fan:hover li:nth-child(9) {
+  transform: rotate(-30deg);
+}
+.fan:hover li:nth-child(10) {
+  transform: rotate(-45deg);
+}
+.fan:hover li:nth-child(11) {
+  transform: rotate(-60deg);
+}
+.fan:hover li:nth-child(12) {
+  transform: rotate(-75deg);
+}
+.fan:hover li:nth-child(13) {
+  transform: rotate(-90deg);
+}/*# sourceMappingURL=style.css.map */
