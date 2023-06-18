@@ -1,0 +1,90 @@
+body{
+    background-color: #222;
+}
+section#reviews h1 {
+    text-align: center;
+}
+
+section#reviews .reviews-container {
+    position: relative;
+    left: 2%;
+}
+
+section#reviews .carousel {
+    display: inline-block;
+    
+}
+
+section#reviews .carousel .slide {
+    width: 100vw;
+    height: 30vh;
+    margin-top: 5%;
+}
+
+section#reviews .carousel .slide img {
+    vertical-align: middle;
+    transition: 1s;
+}
+
+section#reviews .carousel .slide  img:nth-child(1) {
+    margin-left: 13%;
+    width: 10vw;
+}
+
+section#reviews .carousel .slide  img:nth-child(2) {
+    width: 50vw;
+}
+
+section#reviews .carousel .slide  img:nth-child(3) {
+    width: 10vw;
+}
+
+section .control{
+    position: absolute;
+    top: 80%;
+    right: 42%;
+}
+section .control a{
+    text-decoration: none;
+}
+section .control a img{
+    vertical-align: middle;
+}
+
+/* target left*/
+.carousel #left:target .slide .left-img {
+    width: 50vw;
+}
+.carousel #left:target .slide .center-img {
+    width: 10vw;
+}
+.carousel #left:target .slide .right-img {
+    width: 10vw;
+}
+section .control {
+    position: absolute;
+    top: 90%;
+    right: 42%;
+}
+/* target center*/
+.carousel #right:target .slide .left-img {
+    width: 10vw;
+}
+
+.carousel #right:target .slide .center-img {
+    width: 50vw;
+}
+
+.carousel #right:target .slide .right-img {
+    width: 10vw;
+}
+/* target right*/
+.carousel #right:target .slide .left-img{
+    width: 10vw;
+}
+.carousel #right:target .slide .center-img{
+    width: 10vw;
+}
+.carousel #right:target .slide .right-img{
+    width: 50vw;
+}
