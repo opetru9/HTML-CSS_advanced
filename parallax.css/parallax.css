@@ -1,0 +1,76 @@
+body {
+  background-color: transparent;
+}
+
+.parallax-container {
+  background-color: #678;
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+  perspective: 100px;
+  position: absolute;
+  top: -1%;
+  right: 0px;
+  bottom: 0px;
+  left: -1%;
+  overflow: auto;
+}
+.parallax-container .layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax-container .layer.layer-1 {
+  transform: translateZ(-1000px) scale(11);
+  z-index: -1;
+  margin: 30% 0;
+}
+.parallax-container .layer.layer-2 {
+  transform: translateZ(-2000px) scale(21);
+  z-index: -2;
+  margin: 15% 0;
+}
+.parallax-container .layer.layer-3 {
+  transform: translateZ(-3000px) scale(31);
+  z-index: -3;
+  margin: 10% 0;
+}
+.parallax-container .layer.layer-4 {
+  transform: translateZ(-4000px) scale(41);
+  z-index: -4;
+  margin: 7.5% 0;
+}
+.parallax-container .layer.layer-5 {
+  transform: translateZ(-5000px) scale(51);
+  z-index: -5;
+  margin: 6% 0;
+}
+
+.bg-mountains {
+  background-image: url(img/mountains-1244132_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-1 {
+  background-image: url(img/mountains-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.left-side-tree {
+  background-image: url(img/left-side-tree.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+.bear {
+  background-image: url(img/bear.png), url(img/bear-2.png);
+  background-repeat: no-repeat;
+  background-size: 8%;
+  background-position: 50% 95%, 77% 96%;
+}/*# sourceMappingURL=parallax.css.map */

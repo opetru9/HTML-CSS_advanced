@@ -1,0 +1,96 @@
+body{
+    // height: 3000px;
+    background-color: transparent;
+}
+.parallax-container{
+    background-color: #678;
+    width: 100vw;
+    height: 100vh;
+
+    scroll-behavior: smooth;
+
+    perspective: 100px;
+    
+    position: absolute;
+        top: -1%;
+        right: 0px;
+        bottom: 0px;
+        left: -1%;
+        
+        overflow: auto;
+
+        .layer{
+            // font-size: 3em;
+            // color: white;
+            // border: 2px solid green;
+            // margin:40vh 0;
+            width: 100%;
+            height: 100%;
+            
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            @for $n from 1 through 5{
+                &.layer-#{$n} {
+                    // border: 2px dotted #123;
+                    transform: translateZ(-1000px * $n) scale( 10* $n+1);
+                    z-index: -1 * $n;
+                    margin:30%/$n 0;
+                }
+            }
+            // &.layer-2{
+            //     border: 2px dotted #122;
+            //     background-color: #7779;
+            //     transform: translateZ(-400px) scale(2.35);
+            //     z-index: -2;
+            // }
+            // &.layer-3{
+            //     border: 2px dotted red;
+            //     background-color: #7529;
+            //     transform: translateZ(-600px) scale(3.02);
+            //     z-index: -3;
+            // }
+            // &.layer-4{
+            //     border: 2px dotted brown;
+            //     background-color: #8459;
+            //     transform: translateZ(-800px) scale(3.7);
+            //     z-index: -4;
+            // }
+            // &.layer-5{
+            //     border: 2px dotted yellow;
+            //     background-color: #7827;
+            //     transform: translateZ(-1000px) scale(4.37);
+            //     z-index: -5;
+            // }
+
+        }
+}
+.bg-mountains {
+    background-image: url(img/mountains-1244132_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-1 {
+    background-image: url(img/mountains-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left-side-tree {
+    background-image: url(img/left-side-tree.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.bear {
+    background-image: url(img/bear.png),
+        url(img/bear-2.png);
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-position: 50% 95%, 77% 96%;
+}
+

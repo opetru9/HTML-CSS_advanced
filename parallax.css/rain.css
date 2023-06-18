@@ -1,0 +1,1054 @@
+body {
+  overflow: hidden;
+}
+
+.raindrop-layer {
+  height: 310vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.raindrop-layer .raindrop {
+  border-radius: 100%;
+  position: absolute;
+  top: -10px;
+  animation: fall 5s linear infinite;
+}
+@keyframes fall {
+  from {
+    top: -10px;
+  }
+  to {
+    top: 100%;
+  }
+}
+@media (min-width: 901px) {
+  .raindrop-layer .raindrop:nth-child(1) {
+    left: 27%;
+    animation-duration: 4.4219520933s;
+    animation-delay: 1.5593930333s;
+    width: 1.6666666667px;
+    height: 5.6536116794px;
+    background-color: #d2d2d2;
+  }
+  .raindrop-layer .raindrop:nth-child(2) {
+    left: 67%;
+    animation-duration: 3.4109988026s;
+    animation-delay: 2.491392195s;
+    width: 1.6666666667px;
+    height: 7.3292315379px;
+    background-color: gainsboro;
+  }
+  .raindrop-layer .raindrop:nth-child(3) {
+    left: 26%;
+    animation-duration: 4.3800259276s;
+    animation-delay: 0.8754487227s;
+    width: 1.6666666667px;
+    height: 5.70772877px;
+    background-color: #d2d2d2;
+  }
+  .raindrop-layer .raindrop:nth-child(4) {
+    left: 37%;
+    animation-duration: 4.2487620952s;
+    animation-delay: 1.2495696619s;
+    width: 1.6666666667px;
+    height: 5.8840668035px;
+    background-color: #d4d4d4;
+  }
+  .raindrop-layer .raindrop:nth-child(5) {
+    left: 45%;
+    animation-duration: 3.2942915649s;
+    animation-delay: 1.8899838011s;
+    width: 1.6666666667px;
+    height: 7.5888850478px;
+    background-color: #dddddd;
+  }
+  .raindrop-layer .raindrop:nth-child(6) {
+    left: 44%;
+    animation-duration: 3.5668092938s;
+    animation-delay: 3.0793478558s;
+    width: 1.6666666667px;
+    height: 7.0090655094px;
+    background-color: #dbdbdb;
+  }
+  .raindrop-layer .raindrop:nth-child(7) {
+    left: 81%;
+    animation-duration: 3.0027541078s;
+    animation-delay: 4.0753959184s;
+    width: 1.6666666667px;
+    height: 8.3256900507px;
+    background-color: #e0e0e0;
+  }
+  .raindrop-layer .raindrop:nth-child(8) {
+    left: 50%;
+    animation-duration: 5.7391088784s;
+    animation-delay: 3.74446799s;
+    width: 1.6666666667px;
+    height: 4.3560769676px;
+    background-color: #c4c4c4;
+  }
+  .raindrop-layer .raindrop:nth-child(9) {
+    left: 60%;
+    animation-duration: 3.3596022142s;
+    animation-delay: 0.6569022139s;
+    width: 1.6666666667px;
+    height: 7.4413571625px;
+    background-color: #dddddd;
+  }
+  .raindrop-layer .raindrop:nth-child(10) {
+    left: 47%;
+    animation-duration: 3.2067118731s;
+    animation-delay: 1.169413063s;
+    width: 1.6666666667px;
+    height: 7.796147889px;
+    background-color: #dedede;
+  }
+  .raindrop-layer .raindrop:nth-child(11) {
+    left: 87%;
+    animation-duration: 2.818247724s;
+    animation-delay: 3.964225014s;
+    width: 1.6666666667px;
+    height: 8.8707602908px;
+    background-color: #e2e2e2;
+  }
+  .raindrop-layer .raindrop:nth-child(12) {
+    left: 36%;
+    animation-duration: 5.1318651359s;
+    animation-delay: 2.5298571396s;
+    width: 1.6666666667px;
+    height: 4.8715231866px;
+    background-color: #cbcbcb;
+  }
+  .raindrop-layer .raindrop:nth-child(13) {
+    left: 90%;
+    animation-duration: 5.7839804123s;
+    animation-delay: 3.1250401349s;
+    width: 1.6666666667px;
+    height: 4.322282964px;
+    background-color: #c4c4c4;
+  }
+  .raindrop-layer .raindrop:nth-child(14) {
+    left: 62%;
+    animation-duration: 2.955848271s;
+    animation-delay: 2.1198207658s;
+    width: 1.6666666667px;
+    height: 8.4578089631px;
+    background-color: #e1e1e1;
+  }
+  .raindrop-layer .raindrop:nth-child(15) {
+    left: 15%;
+    animation-duration: 3.2789465138s;
+    animation-delay: 3.6350394211s;
+    width: 1.6666666667px;
+    height: 7.6244000611px;
+    background-color: #dedede;
+  }
+  .raindrop-layer .raindrop:nth-child(16) {
+    left: 19%;
+    animation-duration: 3.6077017495s;
+    animation-delay: 3.3593362955s;
+    width: 1.6666666667px;
+    height: 6.929619391px;
+    background-color: #dadada;
+  }
+  .raindrop-layer .raindrop:nth-child(17) {
+    left: 21%;
+    animation-duration: 3.6013174828s;
+    animation-delay: 4.527627384s;
+    width: 1.6666666667px;
+    height: 6.9419039335px;
+    background-color: #dadada;
+  }
+  .raindrop-layer .raindrop:nth-child(18) {
+    left: 13%;
+    animation-duration: 2.8767154457s;
+    animation-delay: 3.8753951558s;
+    width: 1.6666666667px;
+    height: 8.6904667744px;
+    background-color: #e2e2e2;
+  }
+  .raindrop-layer .raindrop:nth-child(19) {
+    left: 52%;
+    animation-duration: 3.0360083366s;
+    animation-delay: 3.0073736665s;
+    width: 1.6666666667px;
+    height: 8.2344964927px;
+    background-color: #e0e0e0;
+  }
+  .raindrop-layer .raindrop:nth-child(20) {
+    left: 11%;
+    animation-duration: 4.0872015523s;
+    animation-delay: 0.9423704577s;
+    width: 1.6666666667px;
+    height: 6.1166545569px;
+    background-color: #d5d5d5;
+  }
+  .raindrop-layer .raindrop:nth-child(21) {
+    left: 94%;
+    animation-duration: 5.51279461s;
+    animation-delay: 0.411922927s;
+    width: 1.6666666667px;
+    height: 4.5349050289px;
+    background-color: #c7c7c7;
+  }
+  .raindrop-layer .raindrop:nth-child(22) {
+    left: 66%;
+    animation-duration: 3.0180548638s;
+    animation-delay: 4.5540324463s;
+    width: 1.6666666667px;
+    height: 8.2834809599px;
+    background-color: #e0e0e0;
+  }
+  .raindrop-layer .raindrop:nth-child(23) {
+    left: 23%;
+    animation-duration: 4.2160728003s;
+    animation-delay: 0.758134422s;
+    width: 1.6666666667px;
+    height: 5.9296888797px;
+    background-color: #d4d4d4;
+  }
+  .raindrop-layer .raindrop:nth-child(24) {
+    left: 61%;
+    animation-duration: 4.1379312829s;
+    animation-delay: 4.7032988146s;
+    width: 1.6666666667px;
+    height: 6.0416663039px;
+    background-color: #d5d5d5;
+  }
+  .raindrop-layer .raindrop:nth-child(25) {
+    left: 31%;
+    animation-duration: 3.3573047538s;
+    animation-delay: 3.0282034881s;
+    width: 1.6666666667px;
+    height: 7.4464494091px;
+    background-color: #dddddd;
+  }
+  .raindrop-layer .raindrop:nth-child(26) {
+    left: 75%;
+    animation-duration: 2.8324218049s;
+    animation-delay: 4.4653252831s;
+    width: 1.6666666667px;
+    height: 8.8263689951px;
+    background-color: #e2e2e2;
+  }
+  .raindrop-layer .raindrop:nth-child(27) {
+    left: 53%;
+    animation-duration: 3.4281942108s;
+    animation-delay: 1.7589321468s;
+    width: 1.6666666667px;
+    height: 7.2924689977px;
+    background-color: gainsboro;
+  }
+  .raindrop-layer .raindrop:nth-child(28) {
+    left: 3%;
+    animation-duration: 3.8165039149s;
+    animation-delay: 2.9562944624s;
+    width: 1.6666666667px;
+    height: 6.5504976695px;
+    background-color: #d8d8d8;
+  }
+  .raindrop-layer .raindrop:nth-child(29) {
+    left: 53%;
+    animation-duration: 3.5253438916s;
+    animation-delay: 2.4948427902s;
+    width: 1.6666666667px;
+    height: 7.091506749px;
+    background-color: #dbdbdb;
+  }
+  .raindrop-layer .raindrop:nth-child(30) {
+    left: 81%;
+    animation-duration: 4.3646464257s;
+    animation-delay: 4.2243291769s;
+    width: 1.6666666667px;
+    height: 5.7278408287px;
+    background-color: #d2d2d2;
+  }
+  .raindrop-layer .raindrop:nth-child(31) {
+    left: 56%;
+    animation-duration: 4.1704410213s;
+    animation-delay: 4.5016926835s;
+    width: 1.6666666667px;
+    height: 5.9945698482px;
+    background-color: #d4d4d4;
+  }
+  .raindrop-layer .raindrop:nth-child(32) {
+    left: 39%;
+    animation-duration: 4.0949559432s;
+    animation-delay: 3.1343559387s;
+    width: 1.6666666667px;
+    height: 6.1050717876px;
+    background-color: #d5d5d5;
+  }
+  .raindrop-layer .raindrop:nth-child(33) {
+    left: 14%;
+    animation-duration: 4.0364475176s;
+    animation-delay: 2.1918243975s;
+    width: 1.6666666667px;
+    height: 6.1935649828px;
+    background-color: #d6d6d6;
+  }
+  .raindrop-layer .raindrop:nth-child(34) {
+    left: 62%;
+    animation-duration: 5.5866387788s;
+    animation-delay: 3.8419093246s;
+    width: 1.6666666667px;
+    height: 4.4749626725px;
+    background-color: #c6c6c6;
+  }
+  .raindrop-layer .raindrop:nth-child(35) {
+    left: 83%;
+    animation-duration: 5.1456933146s;
+    animation-delay: 2.9878529171s;
+    width: 1.6666666667px;
+    height: 4.8584317937px;
+    background-color: #cbcbcb;
+  }
+  .raindrop-layer .raindrop:nth-child(36) {
+    left: 74%;
+    animation-duration: 3.7044844207s;
+    animation-delay: 4.091011228s;
+    width: 1.6666666667px;
+    height: 6.7485774432px;
+    background-color: #d9d9d9;
+  }
+  .raindrop-layer .raindrop:nth-child(37) {
+    left: 56%;
+    animation-duration: 3.1978604457s;
+    animation-delay: 2.6446078957s;
+    width: 1.6666666667px;
+    height: 7.817727016px;
+    background-color: #dedede;
+  }
+  .raindrop-layer .raindrop:nth-child(38) {
+    left: 92%;
+    animation-duration: 4.0040468219s;
+    animation-delay: 3.8327559028s;
+    width: 1.6666666667px;
+    height: 6.2436832315px;
+    background-color: #d6d6d6;
+  }
+  .raindrop-layer .raindrop:nth-child(39) {
+    left: 38%;
+    animation-duration: 3.0044921762s;
+    animation-delay: 2.638152974s;
+    width: 1.6666666667px;
+    height: 8.320873723px;
+    background-color: #e0e0e0;
+  }
+  .raindrop-layer .raindrop:nth-child(40) {
+    left: 95%;
+    animation-duration: 2.8322888254s;
+    animation-delay: 1.1796922838s;
+    width: 1.6666666667px;
+    height: 8.8267834041px;
+    background-color: #e2e2e2;
+  }
+  .raindrop-layer .raindrop:nth-child(41) {
+    left: 80%;
+    animation-duration: 3.4102085013s;
+    animation-delay: 0.8254947005s;
+    width: 1.6666666667px;
+    height: 7.3309300561px;
+    background-color: gainsboro;
+  }
+  .raindrop-layer .raindrop:nth-child(42) {
+    left: 86%;
+    animation-duration: 3.5923860992s;
+    animation-delay: 1.1504275218s;
+    width: 1.6666666667px;
+    height: 6.9591628822px;
+    background-color: #dadada;
+  }
+  .raindrop-layer .raindrop:nth-child(43) {
+    left: 55%;
+    animation-duration: 4.5170520226s;
+    animation-delay: 2.4383549207s;
+    width: 1.6666666667px;
+    height: 5.5345831474px;
+    background-color: #d1d1d1;
+  }
+  .raindrop-layer .raindrop:nth-child(44) {
+    left: 36%;
+    animation-duration: 3.2538586238s;
+    animation-delay: 3.0929437125s;
+    width: 1.6666666667px;
+    height: 7.6831856851px;
+    background-color: #dedede;
+  }
+  .raindrop-layer .raindrop:nth-child(45) {
+    left: 49%;
+    animation-duration: 4.0013125165s;
+    animation-delay: 1.9662418492s;
+    width: 1.6666666667px;
+    height: 6.2479498656px;
+    background-color: #d6d6d6;
+  }
+  .raindrop-layer .raindrop:nth-child(46) {
+    left: 57%;
+    animation-duration: 3.9743242841s;
+    animation-delay: 4.4315630759s;
+    width: 1.6666666667px;
+    height: 6.2903774863px;
+    background-color: #d6d6d6;
+  }
+  .raindrop-layer .raindrop:nth-child(47) {
+    left: 54%;
+    animation-duration: 3.3183792843s;
+    animation-delay: 1.0308605631s;
+    width: 1.6666666667px;
+    height: 7.5337982366px;
+    background-color: #dddddd;
+  }
+  .raindrop-layer .raindrop:nth-child(48) {
+    left: 26%;
+    animation-duration: 3.4337349147s;
+    animation-delay: 4.6015614607s;
+    width: 1.6666666667px;
+    height: 7.2807018074px;
+    background-color: gainsboro;
+  }
+  .raindrop-layer .raindrop:nth-child(49) {
+    left: 3%;
+    animation-duration: 5.9980953557s;
+    animation-delay: 0.0818127653s;
+    width: 1.6666666667px;
+    height: 4.1679897563px;
+    background-color: #c2c2c2;
+  }
+  .raindrop-layer .raindrop:nth-child(50) {
+    left: 28%;
+    animation-duration: 5.1494126723s;
+    animation-delay: 0.1840206343s;
+    width: 1.6666666667px;
+    height: 4.8549226078px;
+    background-color: #cacaca;
+  }
+  .raindrop-layer .raindrop:nth-child(51) {
+    left: 12%;
+    animation-duration: 4.2285476966s;
+    animation-delay: 0.8221526942s;
+    width: 1.6666666667px;
+    height: 5.9121953432px;
+    background-color: #d4d4d4;
+  }
+  .raindrop-layer .raindrop:nth-child(52) {
+    left: 67%;
+    animation-duration: 3.9255950875s;
+    animation-delay: 0.6457835113s;
+    width: 1.6666666667px;
+    height: 6.3684611996px;
+    background-color: #d7d7d7;
+  }
+  .raindrop-layer .raindrop:nth-child(53) {
+    left: 5%;
+    animation-duration: 3.5511929148s;
+    animation-delay: 3.0133188095s;
+    width: 1.6666666667px;
+    height: 7.0398878911px;
+    background-color: #dbdbdb;
+  }
+  .raindrop-layer .raindrop:nth-child(54) {
+    left: 59%;
+    animation-duration: 3.0490987344s;
+    animation-delay: 3.7018066612s;
+    width: 1.6666666667px;
+    height: 8.1991441333px;
+    background-color: #e0e0e0;
+  }
+  .raindrop-layer .raindrop:nth-child(55) {
+    left: 49%;
+    animation-duration: 3.4163713107s;
+    animation-delay: 4.4898076141s;
+    width: 1.6666666667px;
+    height: 7.3177057547px;
+    background-color: gainsboro;
+  }
+  .raindrop-layer .raindrop:nth-child(56) {
+    left: 52%;
+    animation-duration: 5.6703487727s;
+    animation-delay: 4.6388318995s;
+    width: 1.6666666667px;
+    height: 4.4088998758px;
+    background-color: #c5c5c5;
+  }
+  .raindrop-layer .raindrop:nth-child(57) {
+    left: 8%;
+    animation-duration: 4.1924837829s;
+    animation-delay: 0.3770949808s;
+    width: 1.6666666667px;
+    height: 5.9630522847px;
+    background-color: #d4d4d4;
+  }
+  .raindrop-layer .raindrop:nth-child(58) {
+    left: 88%;
+    animation-duration: 4.0455551269s;
+    animation-delay: 3.6890244779s;
+    width: 1.6666666667px;
+    height: 6.1796216381px;
+    background-color: #d6d6d6;
+  }
+  .raindrop-layer .raindrop:nth-child(59) {
+    left: 99%;
+    animation-duration: 4.1087207394s;
+    animation-delay: 0.1999507009s;
+    width: 1.6666666667px;
+    height: 6.0846189327px;
+    background-color: #d5d5d5;
+  }
+  .raindrop-layer .raindrop:nth-child(60) {
+    left: 41%;
+    animation-duration: 3.0759358064s;
+    animation-delay: 2.3316102029s;
+    width: 1.6666666667px;
+    height: 8.127607848px;
+    background-color: #e0e0e0;
+  }
+  .raindrop-layer .raindrop:nth-child(61) {
+    left: 4%;
+    animation-duration: 3.9205358065s;
+    animation-delay: 1.3853271081s;
+    width: 1.6666666667px;
+    height: 6.3766794218px;
+    background-color: #d7d7d7;
+  }
+  .raindrop-layer .raindrop:nth-child(62) {
+    left: 57%;
+    animation-duration: 5.3612860659s;
+    animation-delay: 1.1853602846s;
+    width: 1.6666666667px;
+    height: 4.6630602607px;
+    background-color: #c8c8c8;
+  }
+  .raindrop-layer .raindrop:nth-child(63) {
+    left: 69%;
+    animation-duration: 3.2497976415s;
+    animation-delay: 0.3474074669s;
+    width: 1.6666666667px;
+    height: 7.6927866771px;
+    background-color: #dedede;
+  }
+  .raindrop-layer .raindrop:nth-child(64) {
+    left: 100%;
+    animation-duration: 3.4231797443s;
+    animation-delay: 4.9445192018s;
+    width: 1.6666666667px;
+    height: 7.303151417px;
+    background-color: gainsboro;
+  }
+  .raindrop-layer .raindrop:nth-child(65) {
+    left: 91%;
+    animation-duration: 2.9701169104s;
+    animation-delay: 3.7895427821s;
+    width: 1.6666666667px;
+    height: 8.4171770856px;
+    background-color: #e1e1e1;
+  }
+  .raindrop-layer .raindrop:nth-child(66) {
+    left: 59%;
+    animation-duration: 3.2895620952s;
+    animation-delay: 3.8321816384s;
+    width: 1.6666666667px;
+    height: 7.5997957407px;
+    background-color: #dddddd;
+  }
+  .raindrop-layer .raindrop:nth-child(67) {
+    left: 100%;
+    animation-duration: 2.9959806071s;
+    animation-delay: 1.8089136424s;
+    width: 1.6666666667px;
+    height: 8.3445132925px;
+    background-color: #e0e0e0;
+  }
+  .raindrop-layer .raindrop:nth-child(68) {
+    left: 27%;
+    animation-duration: 3.0306887271s;
+    animation-delay: 2.306591822s;
+    width: 1.6666666667px;
+    height: 8.2489500741px;
+    background-color: #e0e0e0;
+  }
+  .raindrop-layer .raindrop:nth-child(69) {
+    left: 50%;
+    animation-duration: 3.7752375397s;
+    animation-delay: 2.1657023372s;
+    width: 1.6666666667px;
+    height: 6.6220998645px;
+    background-color: #d8d8d8;
+  }
+  .raindrop-layer .raindrop:nth-child(70) {
+    left: 93%;
+    animation-duration: 2.7937016694s;
+    animation-delay: 0.0571644763s;
+    width: 1.6666666667px;
+    height: 8.9487006698px;
+    background-color: #e3e3e3;
+  }
+  .raindrop-layer .raindrop:nth-child(71) {
+    left: 31%;
+    animation-duration: 5.9378299429s;
+    animation-delay: 2.3938377167s;
+    width: 1.6666666667px;
+    height: 4.2102923526px;
+    background-color: #c2c2c2;
+  }
+  .raindrop-layer .raindrop:nth-child(72) {
+    left: 14%;
+    animation-duration: 4.7360926556s;
+    animation-delay: 0.8534206717s;
+    width: 1.6666666667px;
+    height: 5.2786129448px;
+    background-color: #cfcfcf;
+  }
+  .raindrop-layer .raindrop:nth-child(73) {
+    left: 7%;
+    animation-duration: 5.7204065355s;
+    animation-delay: 0.2001482475s;
+    width: 1.6666666667px;
+    height: 4.3703187605px;
+    background-color: #c5c5c5;
+  }
+  .raindrop-layer .raindrop:nth-child(74) {
+    left: 62%;
+    animation-duration: 4.3496965358s;
+    animation-delay: 1.8230358372s;
+    width: 1.6666666667px;
+    height: 5.7475273951px;
+    background-color: lightgray;
+  }
+  .raindrop-layer .raindrop:nth-child(75) {
+    left: 73%;
+    animation-duration: 2.8380192445s;
+    animation-delay: 1.118212022s;
+    width: 1.6666666667px;
+    height: 8.8089607033px;
+    background-color: #e2e2e2;
+  }
+  .raindrop-layer .raindrop:nth-child(76) {
+    left: 78%;
+    animation-duration: 2.9750115921s;
+    animation-delay: 2.6628277753s;
+    width: 1.6666666667px;
+    height: 8.403328601px;
+    background-color: #e1e1e1;
+  }
+  .raindrop-layer .raindrop:nth-child(77) {
+    left: 91%;
+    animation-duration: 3.8647636473s;
+    animation-delay: 4.4476911287s;
+    width: 1.6666666667px;
+    height: 6.4687008783px;
+    background-color: #d8d8d8;
+  }
+  .raindrop-layer .raindrop:nth-child(78) {
+    left: 73%;
+    animation-duration: 3.97756339s;
+    animation-delay: 1.1771386581s;
+    width: 1.6666666667px;
+    height: 6.2852549536px;
+    background-color: #d6d6d6;
+  }
+  .raindrop-layer .raindrop:nth-child(79) {
+    left: 96%;
+    animation-duration: 3.5661310466s;
+    animation-delay: 0.8630801798s;
+    width: 1.6666666667px;
+    height: 7.0103985729px;
+    background-color: #dbdbdb;
+  }
+  .raindrop-layer .raindrop:nth-child(80) {
+    left: 63%;
+    animation-duration: 4.8892838898s;
+    animation-delay: 1.4123498999s;
+    width: 1.6666666667px;
+    height: 5.1132232375px;
+    background-color: #cdcdcd;
+  }
+  .raindrop-layer .raindrop:nth-child(81) {
+    left: 83%;
+    animation-duration: 3.2953166031s;
+    animation-delay: 3.3437489319s;
+    width: 1.6666666667px;
+    height: 7.5865244562px;
+    background-color: #dddddd;
+  }
+  .raindrop-layer .raindrop:nth-child(82) {
+    left: 10%;
+    animation-duration: 2.9427069869s;
+    animation-delay: 4.7767049308s;
+    width: 1.6666666667px;
+    height: 8.4955791085px;
+    background-color: #e1e1e1;
+  }
+  .raindrop-layer .raindrop:nth-child(83) {
+    left: 33%;
+    animation-duration: 4.4796439812s;
+    animation-delay: 1.0537858075s;
+    width: 1.6666666667px;
+    height: 5.5808006406px;
+    background-color: #d1d1d1;
+  }
+  .raindrop-layer .raindrop:nth-child(84) {
+    left: 98%;
+    animation-duration: 4.3780989759s;
+    animation-delay: 2.2434722552s;
+    width: 1.6666666667px;
+    height: 5.7102409373px;
+    background-color: #d2d2d2;
+  }
+  .raindrop-layer .raindrop:nth-child(85) {
+    left: 33%;
+    animation-duration: 2.7814408287s;
+    animation-delay: 0.380978431s;
+    width: 1.6666666667px;
+    height: 8.9881473449px;
+    background-color: #e3e3e3;
+  }
+  .raindrop-layer .raindrop:nth-child(86) {
+    left: 17%;
+    animation-duration: 4.1360122006s;
+    animation-delay: 4.2495212531s;
+    width: 1.6666666667px;
+    height: 6.0444695972px;
+    background-color: #d5d5d5;
+  }
+  .raindrop-layer .raindrop:nth-child(87) {
+    left: 98%;
+    animation-duration: 4.4692426945s;
+    animation-delay: 4.2743780889s;
+    width: 1.6666666667px;
+    height: 5.5937888606px;
+    background-color: #d1d1d1;
+  }
+  .raindrop-layer .raindrop:nth-child(88) {
+    left: 28%;
+    animation-duration: 3.4593392008s;
+    animation-delay: 4.159165154s;
+    width: 1.6666666667px;
+    height: 7.2268137205px;
+    background-color: gainsboro;
+  }
+  .raindrop-layer .raindrop:nth-child(89) {
+    left: 3%;
+    animation-duration: 3.1839242638s;
+    animation-delay: 0.5811565328s;
+    width: 1.6666666667px;
+    height: 7.8519455643px;
+    background-color: #dfdfdf;
+  }
+  .raindrop-layer .raindrop:nth-child(90) {
+    left: 61%;
+    animation-duration: 3.1052932326s;
+    animation-delay: 4.0002427071s;
+    width: 1.6666666667px;
+    height: 8.0507694852px;
+    background-color: #dfdfdf;
+  }
+  .raindrop-layer .raindrop:nth-child(91) {
+    left: 39%;
+    animation-duration: 3.2582584806s;
+    animation-delay: 2.0584837867s;
+    width: 1.6666666667px;
+    height: 7.6728105364px;
+    background-color: #dedede;
+  }
+  .raindrop-layer .raindrop:nth-child(92) {
+    left: 85%;
+    animation-duration: 3.8891845122s;
+    animation-delay: 4.0628614743s;
+    width: 1.6666666667px;
+    height: 6.4280827823px;
+    background-color: #d7d7d7;
+  }
+  .raindrop-layer .raindrop:nth-child(93) {
+    left: 6%;
+    animation-duration: 3.3189146034s;
+    animation-delay: 4.0268897801s;
+    width: 1.6666666667px;
+    height: 7.5325830844px;
+    background-color: #dddddd;
+  }
+  .raindrop-layer .raindrop:nth-child(94) {
+    left: 60%;
+    animation-duration: 5.8556471866s;
+    animation-delay: 2.279525358s;
+    width: 1.6666666667px;
+    height: 4.2693829057px;
+    background-color: #c3c3c3;
+  }
+  .raindrop-layer .raindrop:nth-child(95) {
+    left: 43%;
+    animation-duration: 5.0217008026s;
+    animation-delay: 1.0813685708s;
+    width: 1.6666666667px;
+    height: 4.9783929753px;
+    background-color: #cccccc;
+  }
+  .raindrop-layer .raindrop:nth-child(96) {
+    left: 69%;
+    animation-duration: 3.430241354s;
+    animation-delay: 2.4832584892s;
+    width: 1.6666666667px;
+    height: 7.288116905px;
+    background-color: gainsboro;
+  }
+  .raindrop-layer .raindrop:nth-child(97) {
+    left: 75%;
+    animation-duration: 3.0842610785s;
+    animation-delay: 3.9061526487s;
+    width: 1.6666666667px;
+    height: 8.1056691906px;
+    background-color: #e0e0e0;
+  }
+  .raindrop-layer .raindrop:nth-child(98) {
+    left: 89%;
+    animation-duration: 4.6756808518s;
+    animation-delay: 4.8787190725s;
+    width: 1.6666666667px;
+    height: 5.3468148901px;
+    background-color: #cfcfcf;
+  }
+  .raindrop-layer .raindrop:nth-child(99) {
+    left: 9%;
+    animation-duration: 3.1393320349s;
+    animation-delay: 2.6585294843s;
+    width: 1.6666666667px;
+    height: 7.9634774921px;
+    background-color: #dfdfdf;
+  }
+}
+@media (max-width: 900px) {
+  .raindrop-layer .raindrop:nth-child(1) {
+    left: 11%;
+    animation-duration: 3.1084173028s;
+    animation-delay: 0.1545976532s;
+    width: 1.6666666667px;
+    height: 8.0426781749px;
+    background-color: #dfdfdf;
+  }
+  .raindrop-layer .raindrop:nth-child(2) {
+    left: 46%;
+    animation-duration: 3.4251134271s;
+    animation-delay: 1.997248965s;
+    width: 1.6666666667px;
+    height: 7.2990283481px;
+    background-color: gainsboro;
+  }
+  .raindrop-layer .raindrop:nth-child(3) {
+    left: 90%;
+    animation-duration: 5.647995129s;
+    animation-delay: 4.9861276485s;
+    width: 1.6666666667px;
+    height: 4.4263494265px;
+    background-color: #c5c5c5;
+  }
+  .raindrop-layer .raindrop:nth-child(4) {
+    left: 95%;
+    animation-duration: 3.4141537243s;
+    animation-delay: 3.1705671405s;
+    width: 1.6666666667px;
+    height: 7.322458805px;
+    background-color: gainsboro;
+  }
+  .raindrop-layer .raindrop:nth-child(5) {
+    left: 2%;
+    animation-duration: 3.6251927351s;
+    animation-delay: 4.1703154204s;
+    width: 1.6666666667px;
+    height: 6.8961850658px;
+    background-color: #dadada;
+  }
+  .raindrop-layer .raindrop:nth-child(6) {
+    left: 78%;
+    animation-duration: 4.9104047034s;
+    animation-delay: 4.3386007468s;
+    width: 1.6666666667px;
+    height: 5.0912300533px;
+    background-color: #cdcdcd;
+  }
+  .raindrop-layer .raindrop:nth-child(7) {
+    left: 67%;
+    animation-duration: 4.7420370879s;
+    animation-delay: 3.4006682555s;
+    width: 1.6666666667px;
+    height: 5.2719958821px;
+    background-color: #cfcfcf;
+  }
+  .raindrop-layer .raindrop:nth-child(8) {
+    left: 35%;
+    animation-duration: 3.3444914078s;
+    animation-delay: 0.3118496535s;
+    width: 1.6666666667px;
+    height: 7.4749780914px;
+    background-color: #dddddd;
+  }
+  .raindrop-layer .raindrop:nth-child(9) {
+    left: 45%;
+    animation-duration: 4.6155536189s;
+    animation-delay: 4.0453725844s;
+    width: 1.6666666667px;
+    height: 5.4164683296px;
+    background-color: #d0d0d0;
+  }
+  .raindrop-layer .raindrop:nth-child(10) {
+    left: 45%;
+    animation-duration: 2.8554078962s;
+    animation-delay: 1.8017291229s;
+    width: 1.6666666667px;
+    height: 8.7553165462px;
+    background-color: #e2e2e2;
+  }
+  .raindrop-layer .raindrop:nth-child(11) {
+    left: 4%;
+    animation-duration: 3.1814006712s;
+    animation-delay: 2.0060763622s;
+    width: 1.6666666667px;
+    height: 7.8581739881px;
+    background-color: #dfdfdf;
+  }
+  .raindrop-layer .raindrop:nth-child(12) {
+    left: 5%;
+    animation-duration: 5.9071012501s;
+    animation-delay: 3.6327759875s;
+    width: 1.6666666667px;
+    height: 4.2321942593px;
+    background-color: #c3c3c3;
+  }
+  .raindrop-layer .raindrop:nth-child(13) {
+    left: 27%;
+    animation-duration: 3.4973184309s;
+    animation-delay: 3.894053777s;
+    width: 1.6666666667px;
+    height: 7.1483339291px;
+    background-color: #dbdbdb;
+  }
+  .raindrop-layer .raindrop:nth-child(14) {
+    left: 40%;
+    animation-duration: 2.8392132246s;
+    animation-delay: 4.0172835403s;
+    width: 1.6666666667px;
+    height: 8.8052562531px;
+    background-color: #e2e2e2;
+  }
+  .raindrop-layer .raindrop:nth-child(15) {
+    left: 28%;
+    animation-duration: 4.90807441s;
+    animation-delay: 3.8846109542s;
+    width: 1.6666666667px;
+    height: 5.0936473068px;
+    background-color: #cdcdcd;
+  }
+  .raindrop-layer .raindrop:nth-child(16) {
+    left: 27%;
+    animation-duration: 3.059015893s;
+    animation-delay: 0.5304458977s;
+    width: 1.6666666667px;
+    height: 8.172562966px;
+    background-color: #e0e0e0;
+  }
+  .raindrop-layer .raindrop:nth-child(17) {
+    left: 32%;
+    animation-duration: 3.7908412123s;
+    animation-delay: 0.4142539215s;
+    width: 1.6666666667px;
+    height: 6.5948423055px;
+    background-color: #d8d8d8;
+  }
+  .raindrop-layer .raindrop:nth-child(18) {
+    left: 80%;
+    animation-duration: 3.5312243326s;
+    animation-delay: 1.7096573271s;
+    width: 1.6666666667px;
+    height: 7.0796974776px;
+    background-color: #dbdbdb;
+  }
+  .raindrop-layer .raindrop:nth-child(19) {
+    left: 81%;
+    animation-duration: 3.9599853612s;
+    animation-delay: 0.4268668204s;
+    width: 1.6666666667px;
+    height: 6.3131546508px;
+    background-color: #d7d7d7;
+  }
+  .raindrop-layer .raindrop:nth-child(20) {
+    left: 41%;
+    animation-duration: 4.3537737752s;
+    animation-delay: 0.2569295159s;
+    width: 1.6666666667px;
+    height: 5.7421449277px;
+    background-color: lightgray;
+  }
+  .raindrop-layer .raindrop:nth-child(21) {
+    left: 63%;
+    animation-duration: 4.0347430271s;
+    animation-delay: 0.3604114002s;
+    width: 1.6666666667px;
+    height: 6.1961814748px;
+    background-color: #d6d6d6;
+  }
+  .raindrop-layer .raindrop:nth-child(22) {
+    left: 55%;
+    animation-duration: 3.9526045961s;
+    animation-delay: 1.4712188783s;
+    width: 1.6666666667px;
+    height: 6.3249433108px;
+    background-color: #d7d7d7;
+  }
+  .raindrop-layer .raindrop:nth-child(23) {
+    left: 44%;
+    animation-duration: 6.0509688812s;
+    animation-delay: 0.6094935329s;
+    width: 1.6666666667px;
+    height: 4.131569752px;
+    background-color: #c1c1c1;
+  }
+  .raindrop-layer .raindrop:nth-child(24) {
+    left: 53%;
+    animation-duration: 3.6653236817s;
+    animation-delay: 3.929040952s;
+    width: 1.6666666667px;
+    height: 6.8206800193px;
+    background-color: #dadada;
+  }
+  .raindrop-layer .raindrop:nth-child(25) {
+    left: 11%;
+    animation-duration: 4.8569714784s;
+    animation-delay: 2.9478369413s;
+    width: 1.6666666667px;
+    height: 5.147240438px;
+    background-color: #cdcdcd;
+  }
+  .raindrop-layer .raindrop:nth-child(26) {
+    left: 83%;
+    animation-duration: 2.9956792905s;
+    animation-delay: 1.8686075974s;
+    width: 1.6666666667px;
+    height: 8.3453526147px;
+    background-color: #e0e0e0;
+  }
+  .raindrop-layer .raindrop:nth-child(27) {
+    left: 88%;
+    animation-duration: 4.8635089962s;
+    animation-delay: 3.1416556135s;
+    width: 1.6666666667px;
+    height: 5.1403215291px;
+    background-color: #cdcdcd;
+  }
+  .raindrop-layer .raindrop:nth-child(28) {
+    left: 93%;
+    animation-duration: 2.8689017986s;
+    animation-delay: 2.159818677s;
+    width: 1.6666666667px;
+    height: 8.7141358455px;
+    background-color: #e2e2e2;
+  }
+  .raindrop-layer .raindrop:nth-child(29) {
+    left: 15%;
+    animation-duration: 2.8487942665s;
+    animation-delay: 3.3400991422s;
+    width: 1.6666666667px;
+    height: 8.7756424863px;
+    background-color: #e2e2e2;
+  }
+}/*# sourceMappingURL=rain.css.map */

@@ -1,0 +1,11 @@
+@media (min-width: 1000px) {
+  .bg-mountains {
+    background-position: 0 90%;
+  }
+  .bg-1 {
+    background-position: 0 90%;
+  }
+  .left-side-tree {
+    background-size: 30%;
+  }
+}/*# sourceMappingURL=adapt.css.map */

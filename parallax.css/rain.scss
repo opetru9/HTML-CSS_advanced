@@ -1,0 +1,76 @@
+$flake-color: #fff;
+$flake-layer-color: #234;
+$flake-size: 5px;
+$fall-duration:5s;
+
+body {
+    overflow: hidden;
+    // background-color: $flake-layer-color;
+}
+.raindrop-layer{
+    height: 310vh;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+        .raindrop {
+        border-radius: 100%;
+
+        position: absolute;
+        top: -$flake-size *2;
+
+        animation: fall $fall-duration linear infinite;
+
+        @keyframes fall {
+            from{
+                top:-$flake-size *2;   
+            }
+            to{
+                top:100%;
+            }
+        }
+        
+        @media(min-width: 901px){
+
+            $count:100;
+            @for $n from 1 to $count{
+                &:nth-child(#{$n}){
+                    left: 1% * random(100);
+                    
+                    $sizek: 0.8 + random();
+                    
+                    animation-duration: $fall-duration * 1/$sizek;
+                    animation-delay: $fall-duration * random();
+                    
+                    width: $flake-size  / 3;
+                    height: $flake-size * $sizek;
+                    
+                    background-color: darken($flake-color,20% * 1 / $sizek);
+                }
+            }
+        }
+
+        @media(max-width:900px){
+
+            $count:30;
+            @for $n from 1 to $count{
+                &:nth-child(#{$n}){
+                    left: 1% * random(100);
+                    
+                    $sizek: 0.8 + random();
+                    
+                    animation-duration: $fall-duration * 1/$sizek;
+                    animation-delay: $fall-duration * random();
+                    
+                    width: $flake-size  / 3;
+                    height: $flake-size * $sizek;
+                    
+                    background-color: darken($flake-color,20% * 1 / $sizek);
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,191 @@
+@media (min-width:1000px) {
+    .bg-mountains {
+        background-position: 0 90%;
+    }
+
+    .bg-1 {
+        background-position: 0 90%;
+    }
+
+    .left-side-tree {
+        background-size: 30%;
+    }
+}
+
+// copied from rain.scss:
+
+@media(min-width: 901px) {
+    
+    .raindrop{
+
+    $count: 100;
+
+     @for $n from 1 to $count {
+         &:nth-child(#{$n}) {
+             left: 1% * random(100);
+
+             $sizek: 0.8+random();
+
+             animation-duration: $fall-duration * 1/$sizek;
+             animation-delay: $fall-duration * random();
+
+             width: $flake-size / 3;
+             height: $flake-size * $sizek;
+
+             background-color: darken($flake-color, 20% * 1 / $sizek);
+         }
+        }
+    }
+   }
+
+ @media(max-width:900px) {
+    .raindrop{
+     $count: 30;
+
+     @for $n from 1 to $count {
+         &:nth-child(#{$n}) {
+             left: 1% * random(100);
+
+             $sizek: 0.8+random();
+
+             animation-duration: $fall-duration * 1/$sizek;
+             animation-delay: $fall-duration * random();
+
+             width: $flake-size / 3;
+             height: $flake-size * $sizek;
+
+             background-color: darken($flake-color, 20% * 1 / $sizek);
+         }
+        }
+     }
+ }
+
+//  copied from sections.scss:
+
+@media(max-width:600px) {
+
+    .navbar {
+        li {
+            padding-right: 1%;
+        }
+
+        ul li.brand {
+            transform: translatex(-40%);
+            padding-right: 0;
+
+            a {
+                font-size: 140%;
+                padding-right: 0;
+            }
+        }
+
+        ul li.apply a {
+            padding-right: 0;
+        }
+    }
+
+}
+
+@media(max-width:1200px) {
+    section#presentation {
+        font-size: 140%;
+        padding: 1em;
+
+        h1 {
+            margin-top: 2em;
+        }
+    }
+}
+
+// reviews
+@media(max-width:1100px) and (min-width:900px) {
+    section#reviews .control {
+        position: absolute;
+        top: 110%;
+        right: 40%;
+        bottom: 10%;
+    }
+}
+
+@media(max-width:899px) {
+    section#reviews .reviews-container {
+        left: 0%;
+    }
+
+    section#reviews .carousel .slide img:nth-child(1) {
+        margin-left: 2%;
+        width: 8%;
+    }
+
+    section#reviews .carousel .slide img:nth-child(2) {
+        width: 75%;
+    }
+
+    section#reviews .carousel .slide img:nth-child(3) {
+        width: 8%;
+    }
+
+    section#reviews .control {
+        position: absolute;
+        top: 105%;
+        right: 40%;
+        bottom: 10%;
+    }
+
+    section#reviews .carousel .slide {
+        margin-top: 12%;
+    }
+
+    section .control a img {
+        width: 6vw;
+    }
+}
+
+// form
+@media(max-width:600px) {
+    section {
+        h1 {
+            font-size: 130%;
+        }
+
+        form {
+            .data {
+                font-size: 70%;
+
+                div {
+                    padding: 0.3em 0.1em;
+                }
+            }
+
+            .select {
+                padding: 1%;
+
+                input {
+                    margin-bottom: 0;
+                    padding: 0.1 0.2em;
+                    height: 50%;
+                    width: 50%;
+                }
+            }
+
+            button {
+                width: 9em;
+                height: 3em;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                background-image: radial-gradient(rgb(36, 168, 168) 5%, rgb(17, 107, 29)80%, aqua);
+                border-radius: 10px;
+                border: 1px solid transparent;
+                margin-top: 10%;
+
+                &:hover {
+                    color: white;
+                    background-color: #555;
+                    background-image: radial-gradient(rgb(2, 77, 77) 5%, rgb(12, 61, 19)80%, rgb(3, 90, 90));
+                    box-shadow: 0 0 2px 2px rgb(0, 119, 128);
+                }
+            }
+        }
+    }
+}
