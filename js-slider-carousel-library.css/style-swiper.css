@@ -1,0 +1,23 @@
+body {
+  background-color: #222;
+  overflow: hidden;
+}
+
+.swiper-sea {
+  width: 100%;
+  height: 600px;
+  --swiper-pagination-bottom:6%;
+  --swiper-scrollbar-bottom:3%;
+}
+.swiper-sea .swiper-wrapper {
+  text-align: center;
+}
+.swiper-sea .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-sea .swiper-wrapper .swiper-slide img {
+  width: 400px;
+  height: 80vh;
+}/*# sourceMappingURL=style-swiper.css.map */
