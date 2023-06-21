@@ -1,0 +1,95 @@
+$color-dark:#333;
+$color-light:orange;
+
+$sizeW: 800px;
+$sizeH: 600px;
+
+$divsizeH:50px;
+$divsizeW:50px;
+
+$thickness:5px;
+
+$no-of-div-X :$sizeW / $divsizeW;
+$no-of-div-Y :$sizeH / $divsizeH;
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:$color-dark;
+    @include reset;
+}
+
+.carousel{
+    width: $sizeW;
+    height: $sizeH;
+    // border:$thickness solid lighten($color-dark, 40%);
+    .slide{     
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: inherit;
+        height: inherit;
+        // border: 1px solid green;
+        @for $child from 1 through 3{
+            &:nth-child(#{$child}){
+                >div{
+                    width: $divsizeW;
+                    height: $divsizeH;
+                    // border:1px solid red;
+                    float: left;
+                    box-sizing: border-box;
+                    
+                    background-image: url(img/slide-#{$child}.jpg);
+                    background-size: 800px 600px;
+
+                @for $y from 0 through $no-of-div-Y - 1{   
+                    @for $x from 0 through $no-of-div-X - 1{
+                        &:nth-child(#{ $x+1 + $y*$no-of-div-X }){
+                            background-position-x:$x * -$sizeW / $no-of-div-X;
+                            background-position-y: $y * -$sizeH / $no-of-div-Y;
+
+                            // opacity: 0;
+                            // animation: efect-1 5s 1;
+                            // animation-fill-mode: forwards;
+                            // // animation-delay: 0.5s *$x;
+                            // // animation-delay: 0.5s *$y;
+                            // // animation-delay: 0.1s *random(30);
+                            // // animation-delay: 0.5s *($x+$y);
+                            
+                            transform: translateX(-$sizeW*3);
+                            animation: efect-2 2s*random(3) 1;
+                            animation-fill-mode: forwards;
+                            animation-delay: 0.1s * random(10) + ($child - 1) * 7s;
+                            
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
+// animation
+@keyframes efect-1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes efect-2{
+    from{
+        transform: translateX(-$sizeW*3)rotate(-1800deg);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
