@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Carousel utilizând Splide.js</title>
+    <link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@3.0.9/dist/css/splide.min.css">
+<style>
+    /* .body{
+        background-color: #121;
+        margin: 0;
+    } */
+    .splide-sea-green{
+        background-color: rgb(19, 113, 126);
+    }
+    .splide-sea-green .splide__pagination__page.is-active {
+        background: #15c1a4;
+    }
+
+    .splide-sea-green .splide__pagination__page {
+        background: #2f4f4f;
+    }
+
+    .splide-sea-green .splide__arrow {
+        background: #2f4f4f;
+    }
+
+    .splide-sea-green .splide__arrow::before {
+        color: #15c1a4;
+    }
+    .splide-sea-green .splide__slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .splide-sea-green .splide__slide img{
+        width: 400px;
+        /* height: 600px; */
+    }
+</style>
+</head>
+
+<body style="margin: 0;">
+    <div id="splide" class="splide splide-sea-green">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="img/i1.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="img/i2.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="img/i3.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<script src="https://unpkg.com/@splidejs/splide@3.0.9/dist/js/splide.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#splide').mount();
+    });
+</script>
+</body>
+
+</html>
