@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Bootstrap | Offcanvs</title>
+    <style>
+        /* body{
+            background-color: #222;
+        } */
+        .text-green{
+            color: rgb(49, 129, 49);
+        }
+        .text-blue{
+            color: #456;
+        }
+        .bg-green{
+            background-color: #121;
+        }
+        .btn-xs-custom{
+            font-weight: bolder;
+            /* font-size: 12px; */
+            padding: 0px;
+        }
+        /* .list-custom{
+            list-style: none;
+        } */
+    </style>
+</head>
+<body class="bg-dark">
+    <header class="container">
+        <h1 class="text-green text-center">Bootstrap 5.x offcanvas component</h1>
+        <h2 class="text-blue">E-shop cart :</h2>
+
+    <nav class="navbar navbar-expand-md bg-green justify-content-between">
+
+        
+        <a class="navbar-brand text-blue m-1" href="#">
+            <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="70"  class="d-inline-block align-text-midle ">
+            BOOTSTRAP
+        </a>
+    
+    
+        <ul class="navbar-nav ">
+            <li class="nav-item "><a class="nav-link text-blue" href="">Lorem.</a></li>
+            <li class="nav-item"><a class="nav-link text-blue" href="">Quae.</a></li>
+            <li class="nav-item"><a class="nav-link text-blue" href="">Aliquid.</a></li>
+            <li class="nav-item"><a class="nav-link text-blue" href="">Repellat.</a></li>
+            <li class="nav-item"><a class="nav-link text-blue" href="">Impedit.</a></li>
+        </ul>
+        
+        <div class=" navbar-nav m-1">
+            <button class="btn btn-outline-success nav-item"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvas-cart"
+            ><i class="bi bi-cart"></i></button>
+        </div>
+    </nav>
+
+    </header>
+    
+    <div class="offcanvas offcanvas-end bg-dark text-warning" data-bs-backdrop="static" tabindex="-1" id="offcanvas-cart"
+        aria-labelledby="offcanvas-cartLabel">
+
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="staticBackdropLabel">Your cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <div>
+                <!-- <table class="table ">
+                    <thead >
+                        <tr>
+                            <th scope="col" class="bg-warning ">#</th>
+                            <th scope="col"class="bg-warning">Name</th>
+                            <th scope="col"class="bg-warning">Quantity</th>
+                            <th scope="col"class="bg-warning">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        <tr>
+                            <th scope="row"class="bg-">1</th>
+                            <td >Iphone 14 Pro Max</td>
+                            <td>
+                                x 1
+                            </td>
+                            <td class="text-end">1450 $</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td >Transparent Cover...</td>
+                            <td>
+                                x 2
+                            </td>
+                            <td class="text-end">30 $</td>
+                        </tr>
+                        <tr>
+                            
+                            <td colspan="4" class="text-end mr-1">
+                                1470 $ -25$ (2% discount)=
+                                <span class="bg-success border border-black rounded-start p-1">1445 $</span>
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table> -->
+                <ul class="list-group list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Iphone 14 Pro Max</div>
+                            1450$
+                        </div>
+                        <span class="badge bg-primary rounded-pill">x1</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Transparent Cover fo Iphone 14...</div>
+                            30$
+                        </div>
+                        <span class="badge bg-primary rounded-pill">x2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start ">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Total</div>
+                                1470$ -25$ (2% discount)= <br><b class="text-green">1445 $</b> 
+                        </div>
+                        <span class="badge bg-primary rounded-pill">3</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="text-end mt-2">
+                <button class="btn btn-secondary"data-bs-toggle="modal" data-bs-target="#change"> 
+                        Change the order
+                        <i class="bi bi-gear-wide-connected"></i>
+                    </button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyNow">
+                        Buy Now 
+                        <i class="bi bi-credit-card"></i>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+        
+<!-- modal for change  -->
+<div class="modal fade" id="change" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Chage your order</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table ">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="bg-warning ">#</th>
+                            <th scope="col" class="bg-warning">Name</th>
+                            <th scope="col" class="bg-warning">Quantity</th>
+                            <th scope="col" class="bg-warning">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="bg-">
+                                <button class="btn btn-danger btn-xs-custom"><i class="bi bi-x"></i></button>
+                                1
+                            </th>
+                            <td>Iphone 14 Pro Max</td>
+                            <td>
+                                <button class="btn btn-danger btn-xs-custom"><i class="bi bi-dash-lg"></i></button>
+                                x 1
+                                <button class="btn btn-success btn-xs-custom"><i class="bi bi-plus"></i></button>
+                            </td>
+                            <td class="text-end">1450 $</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <button class="btn btn-danger btn-xs-custom"><i class="bi bi-x"></i></button>
+                                2
+                            </th>
+                            <td>Transparent Cover...</td>
+                            <td>
+                                <button class="btn btn-danger btn-xs-custom"><i class="bi bi-dash-lg"></i></button>
+                                x 2
+                                <button class="btn btn-success btn-xs-custom"><i class="bi bi-plus"></i></button>
+                            </td>
+                            <td class="text-end">30 $</td>
+                        </tr>
+                        <tr>
+                
+                            <td colspan="4" class="text-end mr-1">1470 $
+                                -25$ (2% discount)=
+                                <span class="bg-success border border-black rounded-start p-1">1445 $</span>
+                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal for buy -->
+<div class="modal fade" id="buyNow" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">First you need to sign up </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Log In</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
