@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID | Intro</title>
+    <style>
+        body{
+            background-color: #121;
+        }
+        .box{
+            width: 80vw;
+            height: 100vh;
+            border: 1px solid #999;
+            margin: 2% auto;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(3,1fr);
+        }
+        /* .slide{
+            border: 1px solid green;
+        } */
+        .slide:nth-child(2){
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+        }
+        .slide:nth-child(3){
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+        }
+        .slide:nth-child(4){
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 2;
+        }
+        .slide:nth-child(5){
+            grid-column-start: 5;
+            /* grid-column-end: 5; */
+            /* grid-row-start: 2; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="slide">
+            <img src="img/i1.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="img/i2.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="img/i3.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="img/i4.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="img/i5.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

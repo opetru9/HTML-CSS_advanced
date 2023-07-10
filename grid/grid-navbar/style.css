@@ -1,0 +1,125 @@
+body{
+    background-color: #222;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+/* ------ */
+
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 0.3fr 1fr auto;
+    
+}
+.navbar .nav{
+   background-color: #111; 
+    grid-column: 2/12;
+    grid-row: 2;
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6,auto);
+
+    padding: 1%;
+}
+.nav a:not(:first-child){
+    color: rgb(255, 255, 49);
+    /* margin-top: 6.5em; */
+
+    border: 1px solid rgb(62, 82, 21);
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 2%;
+}
+.nav a:first-child{
+    grid-column: 1/5;
+    grid-row: 1/6;
+}
+.nav a:nth-child(2){
+    grid-column: 5;
+    grid-row: 1;
+    align-self: self-end;
+}
+.nav a:nth-child(3){
+    grid-column: 6;
+    grid-row: 2;
+}
+.nav a:nth-child(4){
+    grid-column: 7;
+    grid-row: 3;
+}
+.nav a:nth-child(5){
+    grid-column: 8;
+    grid-row: 4;
+}
+.nav a:nth-child(6){
+    grid-column: 9;
+    grid-row: 5;
+}
+.nav a:nth-child(7){
+    grid-column: 10;
+    grid-row: 6;
+}
+/* .nav a:not(a:first-child){
+    vertical-align: middle;
+} */
+
+.top a:not(a:first-child){
+    text-align: right;
+}
+.top a{
+    color: #000;
+}
+.navbar .top{
+    background-color: rgb(255, 255, 49);
+    grid-column: 2/12;
+    grid-row: 1;
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    /* align-items: end; */
+
+    padding: 1%;
+}
+.navbar .top a:nth-child(1){
+    grid-column: 1;
+}
+.navbar .top .hours{
+    grid-column: 8/10;
+}
+.navbar .top a:nth-child(3){
+    grid-column: 10;
+}
+
+
+.navbar .dropdown{
+    grid-row: 3;
+    grid-column: 2/12;
+    display: none;
+}
+#map:target {
+    display: block;
+    transition: 0.5s;
+}
+.navbar .options{
+    background-color: #111;
+    /* border: 2px solid rgb(62, 82, 21); */
+    /* border-radius: 5px; */
+    grid-row: 3;
+    grid-column: 11/12;
+    /* text-align: center; */
+    display: none;
+
+}
+.navbar .options a{
+    color: rgb(255, 255, 49);
+    padding: 10px;
+    text-decoration: underline;
+    
+}
+#options:target{
+    display: block;
+}
