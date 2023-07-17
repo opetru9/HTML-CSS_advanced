@@ -1,0 +1,276 @@
+.slider {
+    position: relative;
+    /* padding: 0 50px; */
+    width: 90vw;
+    margin: 0 auto;
+
+}
+.slider img{
+    width: 300px;
+    height: 290px;
+    /* padding-left: 5%; */
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    font-size: 0;
+    width: 40px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: -10px;
+    opacity: 0;
+}
+.slider .slick-arrow:hover{
+    transition: 0.7s;
+    opacity: 1;
+}
+.slider:hover .slick-arrow {
+    opacity: 0.5;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+}
+
+/* Стрелка влево */
+.slider .slick-arrow.slick-prev {
+    left: -2.5%;
+    background-image: url('img/left.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* Стрелка вправо */
+.slider .slick-arrow.slick-next {
+    right: -2.5%;
+    background-image: url('img/right.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.slider_item.slick-slide{
+    background-image: url("img/5stars.png");
+    background-repeat: no-repeat;
+    background-size: 6vw;
+    /* background-position: 9.5vw 14.5vw; */
+    display: inline-block;
+    margin: 0 0.17%;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.slider_item  a {
+    display: inline-block;
+    text-decoration: none;
+    color: #111;
+    margin: 0;
+}
+.slider_item a:first-of-type{
+    padding-top: 5px;
+    color: #888;
+}
+.slider_item a:first-of-type:hover{
+    color:  darkred;
+    }
+.slider_item a:nth-of-type(2):hover{
+    text-decoration: underline darkred;
+    color: darkred;
+}
+.slider_item h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: darkred;
+    transform: translateY(-8px);
+}
+.slider_item button{
+    position: absolute;
+    right: 20%;
+
+    border: transparent;
+    background-color: #aaa;
+    padding: 7px 11px;
+    border-radius: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+.slider_item button:first-of-type{
+    top: 5%;
+}
+.slider_item button:nth-of-type(2){
+    top: 16%;
+}
+.slider_item button:nth-of-type(3){
+    top: 27%;
+}
+.slider_item button:nth-of-type(4){
+    bottom: 45%;
+    right: 40%;
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+.slider_item:hover button{
+    opacity: 1;
+    transition: 0.8s;
+}
+.slider_item button:hover{
+    background-color: darkred;
+}
+
+
+/* -----------2rows-slider----------- */
+
+
+section.double-carousel .two-rows-slider {
+    position: relative;
+    /* padding: 0 50px; */
+    width: 90vw;
+    margin: 0 auto;
+}
+.two-rows-slider .slider_item{
+    margin: 25px 0;
+    position: relative;
+}
+.two-rows-slider img{
+    width: 300px;
+    height: 290px;
+    /* padding-left: 5%; */
+}
+.two-rows-slider .slick-arrow {
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    font-size: 0;
+    width: 40px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: -10px;
+    opacity: 0;
+}
+.two-rows-slider .slick-arrow:hover{
+    transition: 1s;
+    opacity: 1;
+}
+.two-rows-slider:hover .slick-arrow {
+    opacity: 0.5;
+}
+
+/* Ограничивающая оболочка */
+.two-rows-slider .slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.two-rows-slider .slick-track {
+    display: flex;
+}
+
+/* Стрелка влево */
+.two-rows-slider .slick-arrow.slick-prev {
+    left: -3.8%;
+    background-image: url('img/left.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* Стрелка вправо */
+.two-rows-slider .slick-arrow.slick-next {
+    right: -2.5%;
+    background-image: url('img/right.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.two-rows-slider .slider_item{
+    background-image: url('img/5stars.png');
+    background-repeat: no-repeat;
+    background-size: 6vw;
+    background-position: 11.5vw 17.5vw;
+    /* border: 1px solid forestgreen; */
+    /* height: 30vw; */
+    /* width: 270px; */
+    display: inline-block;
+    margin: 0 0.17%;
+    position: relative;
+}
+.two-rows-slider .slider_item  a {
+    display: inline-block;
+    text-decoration: none;
+    color: #111;
+    margin: 1.5% 0;
+}
+.two-rows-slider .slider_item a:first-of-type{
+    font-size: small;
+    color: #888;
+    padding-top: 2px;
+}
+.two-rows-slider .slider_item a:first-of-type:hover{
+    color:  darkred;
+    }
+.two-rows-slider .slider_item a:nth-of-type(2):hover{
+    text-decoration: underline darkred;
+    color: darkred;
+}
+.two-rows-slider .slider_item h2 {
+    margin: 0;
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+#heart,#add,#compare,#loop{
+    position: absolute;
+    right: 25%;
+
+    border: transparent;
+    background-color: #aaa;
+    padding: 7px 11px;
+    border-radius: 100%;
+    cursor: pointer;
+    opacity: 0;
+ } 
+.two-rows-slider .slider_item:hover #heart{
+    opacity: 1;
+    transition: 0.8s;
+}
+.two-rows-slider .slider_item:hover #compare{
+    opacity: 1;
+    transition: 0.8s;
+}
+.two-rows-slider .slider_item:hover #loop{
+    opacity: 1;
+    transition: 0.8s;
+}
+.two-rows-slider .slider_item:hover #add{
+    opacity: 1;
+    transition: 0.8s;
+}
+#heart:hover{
+    background-color: darkred;
+} 
+#compare:hover{
+    background-color: darkred;
+} 
+#loop:hover{
+    background-color: darkred;
+} 
+#add:hover{
+    background-color: darkred;
+} 
+#add{
+    bottom: 110px;
+    right: 42%;
+    padding: 10px 25px;
+    border-radius: 20px;
+}  
+
+

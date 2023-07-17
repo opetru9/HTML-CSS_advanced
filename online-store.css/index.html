@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
-        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
-        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
-        crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adapt.css">
+    <link rel="stylesheet" href="carousel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Debaco</title>
     <style>
@@ -19,13 +18,143 @@
 </head>
 <body>
     <header>
-        <div class="fixed-bar">
-            <div class="fixed-bar_brand"></div>
-            <div class="fixed-bar_button">
-                <a href="">Buy now</a>
+        <nav class="navbar navbar-light bg-light navbar-expand-sm justify-content-between ">
+            <div class="container">
+                <div class="navbar-brand">
+                    <img src="img/logo-img.png" alt="">
+                </div>
+    
+                <div class="main-menu navbar-collapse collapse" id="navbar-main-menu">
+    
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="">HOME</a>
+                            <ul class="dropdown-menu ">
+                                <li class="dropdown-item">Home shop 1</li>
+                                <li class="dropdown-item">Home shop 2</li>
+                                <li class="dropdown-item">Home shop 3</li>
+                                <li class="dropdown-item">Home shop 4</li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="">SHOP</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <h1 class="dropdown-header">Shop Layouts</h1>
+                                    </li>
+                                    <li class="dropdown-item">product 1</li>
+                                    <li class="dropdown-item">product 2</li>
+                                    <li class="dropdown-item">product 3</li>
+                                    <li class="dropdown-item">product 3</li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h1 class="dropdown-header">Shop Pages</h1>
+                                    </li>
+                                    <li class="dropdown-item">product 1</li>
+                                    <li class="dropdown-item">product 2</li>
+                                    <li class="dropdown-item">product 3</li>
+                                    <li class="dropdown-item">product 3</li>
+                                    <li class="dropdown-item">product 3</li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h1 class="dropdown-header">Product Types</h1>
+                                    </li>
+                                    <li class="dropdown-item">product 1</li>
+                                    <li class="dropdown-item">product 2</li>
+                                    <li class="dropdown-item">product 3</li>
+                                    <li class="dropdown-item">product 3</li>
+                                </ul>
+                            </div>
+    
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="">BLOG</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <h1 class="dropdown-header">Blog Layouts</h1>
+                                    </li>
+                                    <li class="dropdown-item">product 1</li>
+                                    <li class="dropdown-item">product 2</li>
+                                    <li class="dropdown-item">product 3</li>
+                                    <li class="dropdown-item">product 3</li>
+                                    <li class="dropdown-item">product 3</li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h1 class="dropdown-header">Blog Pages</h1>
+                                    </li>
+                                    <li class="dropdown-item">product 1</li>
+                                    <li class="dropdown-item">product 2</li>
+                                    <li class="dropdown-item">product 3</li>
+                                    <li class="dropdown-item">product 3</li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h1 class="dropdown-header">Blog Types</h1>
+                                    </li>
+                                    <li class="dropdown-item">product 1</li>
+                                    <li class="dropdown-item">product 2</li>
+                                    <li class="dropdown-item">product 3</li>
+                                    <li class="dropdown-item">product 3</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="">PAGES</a>
+                            <ul class="dropdown-menu ">
+                                <li class="dropdown-item">Frequently Questions</li>
+                                <li class="dropdown-item">Privacy Policy</li>
+                                <li class="dropdown-item">Error 404</li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">CONTACT</a>
+                        </li>
+                    </ul>
+    
+                    <div class="search navbar-nav ">
+                        <a href="" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#search-modal">
+                            <!-- <input type="text" class="bg-dark "> -->
+                            <i class="bi bi-search"></i>
+                        </a>
+                    </div>
+    
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="" class="nav-link " data-bs-toggle="modal" data-bs-target="#user-modal">
+                                <i class="bi bi-person-fill"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link"><i class="bi bi-heart-fill"></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+    
+                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                <i class="bi bi-cart "></i>
+                            </a>
+                            <ul class="dropdown-menu ">
+                                <li class="dropdown-item">product 1</li>
+                                <li class="dropdown-item">product 2</li>
+                                <li class="dropdown-item">product 3</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+    
+    
+                <button class="navbar-toggler bg-gradient" data-bs-toggle="collapse" data-bs-target="#navbar-main-menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-        </div>
-
+        </nav>
         <div class="under-fixed-bar">
             <div class="under-fixed-bar_text">
                 Mid-season sale up to 20% OFF. Use code “SALEOFF20”
@@ -46,72 +175,86 @@
                 </div>
             </div>
         </div>
-
-        <nav class="nav">
-            <div class="nav_logo"></div>
-            <!-- <ul class="nav_menu">
-                <li>
-                    <select name="" id="">
-                        <option value="">HOME</option>
-                    </select>
-                </li>
-                <li>
-                    <select name="" id="">
-                        <option value="">SHOP</option>
-                    </select>
-                </li>
-                <li>
-                    <select name="" id="">
-                        <option value="">BLOG</option>
-                    </select>
-                </li>
-                <li>
-                    <select name="" id="">
-                        <option value="">PAGES</option>
-                    </select>
-                </li>
-                <li>
-                   <a href=""> ABOUT US</a>
-                </li>
-                <li>
-                   <a href="">CONTACT</a> 
-                </li>
-            </ul> -->
-            <ul class="nav_icons">
-                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a> </li>
-                <li><a href=""><i class="fa-regular fa-user"></i></a> </li>
-                <li><a href=""><i class="fa-regular fa-heart"></i></a> </li>
-                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a> </i></li>
-            </ul>
-        </nav>
     </header>
-
-    <section class="section-carousel-main">
-        <div class="carousel-wraper-main" id="carousel-wraper-main">
-            <div class="carousel-main" id="carousel-main">
-                <div class="carousel_silde-wraper-main" id="slide-wraper-main">
-                    <div class="silde-wraper_slide-main">
-                        <img src="img/carousel-img-2.jpg" alt="">
+    
+    <!-- Modal-search -->
+    <div class="modal fade" id="search-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Search</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text">
+                    <i class="bi bi-search"></i>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal-user -->
+    <div class="modal fade" id="user-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="bi bi-person-fill"></i>Log In</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">OK<i class="bi bi-box-arrow-in-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+   
+    
+<section class="carousel-big">
+        <div class="cutie" id="cutie">
+            <div class="cutie-main" id="cutie-main">
+                <div class="cutie-poze" id="cutie-poze">
+                    <div class="poza">
+                        <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/slider11.jpg" alt="">
                     </div>
-                    <div class="silde-wraper_slide-main">
-                        <img src="img/carousel-img-1.jpg" alt="">
+                    <div class="poza">
+                        <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/slider12.jpg" alt="">
                     </div>
-                    <div class="silde-wraper_slide-main">
-                        <img src="img/carousel-img-3.jpg" alt="">
+                    <div class="poza">
+                        <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/slider13.jpg" alt="">
                     </div>
-                    <div class="slide-wraper_action-main">
-                        <h1>Sale Offer 20% OFF This Week</h1>
-                        <h2>Lorem ipsum dolor sit.</h2>
+                    <div class="poza-action-1">
+                        <h1>Sale Offer 20% Off This Week</h1>
+                        <h2>Serving Dishes <br> & Mugs</h2>
                         <button>SHOPPING NOW</button>
                     </div>
-                    <div class="slide-wraper_action-2-main">
-                        <h1>Sale Offer 20% OFF This Week</h1>
-                        <h2> sit amet consectetur adipisicing.</h2>
+                    <div class="poza-action-2">
+                        <h1>Sale Offer 20% Off This Week</h1>
+                        <h2> Canvas Cross Back <br> Apron Collection</h2>
                         <button>SHOPPING NOW</button>
                     </div>
-                    <div class="slide-wraper_action-3-main">
-                        <h1>Sale Offer 20% OFF This Week</h1>
-                        <h2>Lorem, ipsum dolor.</h2>
+                    <div class="poza-action-3">
+                        <h1>Sale Offer 20% Off This Week</h1>
+                        <h2>Linen Oven Gloves <br> In The Kitchen</h2>
                         <button>SHOPPING NOW</button>
                     </div>
                 </div>
@@ -119,9 +262,9 @@
             
         
             <div class="navigation">
-                <a href="#carousel-wraper-main"></a>
-                <a href="#carousel-main-main"></a>
-                <a href="#slide-wraper-main"></a>
+                <a href="#cutie"></a>
+                <a href="#cutie-main"></a>
+                <a href="#cutie-poze"></a>
             </div>
         </div>
     </section>
@@ -130,22 +273,26 @@
         <div class="products-container">
             <div class="products">
                 <div class="products_text">
-                    Lorem, ipsum. <br>
-                    Lorem, ipsum dolor. <br>
+                    <h1>Table Runners</h1>
+                    <h1> Collection</h1>
+                    <h3>Top Treding</h3>
+                    
                     <a href="#">Discover Now</a>
                 </div>
             </div>
             <div class="products">
                 <div class="products_text">
-                    Lorem, ipsum. <br>
-                    Lorem, ipsum dolor. <br>
-                    <a href="#">Discover Now</a>
+                    <h1>Up To 50% Off</h1>
+                    <h1>Dinning Ware</h1>
+                    <h3>Black Fridays!</h3>
                 </div>
             </div>
             <div class="products">
                 <div class="products_text">
-                    Lorem, ipsum. <br>
-                    Lorem, ipsum dolor. <br>
+                    <h1>Classic</h1>
+                    <h1>Flatware</h1>
+                    <h3>New Arrivals</h3>
+                    
                     <a href="#">Discover Now</a>
                 </div>
             </div>
@@ -179,10 +326,9 @@
         <h1>New Trending Products</h1>
         <h3>Accumsan vitae pede lacus ut ullamcorper sollicitudin quisque libero est.</h3>
 
-            <div class="container">
-                <div id="carousel" class="carousel">
-                    <div class="products-carousel_container_item">
-                        <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt="">
+                <div class="slider" >
+                    <div class="slider_item">
+                        <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><br>
                         <a href="#">Placemats</a><br>
                         <a href="#">Lorem ipsum dolor sit amet.</a>
                         <button ><i class="fa-regular fa-heart"></i></button>
@@ -191,8 +337,8 @@
                         <button>Add to cart</button>
                         <h2>$86.00</h2>
                     </div>
-                    <div class="products-carousel_container_item">
-                        <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/2-1products-400x400.jpg" alt=""><a
+                    <div class="slider_item">
+                        <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/2-1products-400x400.jpg" alt=""><br><a
                             href="#">Placemats</a><br>
                         <a href="#">Lorem ipsum dolor sit amet.</a>
                         <button ><i class="fa-regular fa-heart"></i></button>
@@ -201,8 +347,8 @@
                         <button>Add to cart</button>
                         <h2>$86.00</h2>
                     </div>
-                    <div class="products-carousel_container_item">
-                        <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/6-1products-400x400.jpg" alt=""><a
+                    <div class="slider_item">
+                        <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/6-1products-400x400.jpg" alt=""><br><a
                             href="#">Placemats</a><br>
                         <a href="#">Lorem ipsum dolor sit amet.</a>
                         <button ><i class="fa-regular fa-heart"></i></button>
@@ -211,8 +357,8 @@
                         <button>Add to cart</button>
                         <h2>$86.00</h2>
                     </div>
-                    <div class="products-carousel_container_item">
-                        <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/7-1products-400x400.jpg" alt=""><a
+                    <div class="slider_item">
+                        <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/7-1products-400x400.jpg" alt=""><br><a
                             href="#">Placemats</a><br>
                         <a href="#">Lorem ipsum dolor sit amet.</a>
                         <button ><i class="fa-regular fa-heart"></i></button>
@@ -221,7 +367,37 @@
                         <button>Add to cart</button>
                         <h2>$86.00</h2>
                     </div>
-                    <div class="products-carousel_container_item">
+                    <div class="slider_item">
+                        <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><br><a
+                            href="#">Placemats</a><br>
+                        <a href="#">Lorem ipsum dolor sit amet.</a>
+                        <button ><i class="fa-regular fa-heart"></i></button>
+                        <button ><i class="fa-solid fa-code-compare"></i></button>
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button>Add to cart</button>
+                        <h2>$86.00</h2>
+                    </div>
+                    <div class="slider_item">
+                        <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><br><a
+                            href="#">Placemats</a><br>
+                        <a href="#">Lorem ipsum dolor sit amet.</a>
+                        <button ><i class="fa-regular fa-heart"></i></button>
+                        <button ><i class="fa-solid fa-code-compare"></i></button>
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button>Add to cart</button>
+                        <h2>$86.00</h2>
+                    </div>
+                    <div class="slider_item">
+                        <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><br><a
+                            href="#">Placemats</a><br>
+                        <a href="#">Lorem ipsum dolor sit amet.</a>
+                        <button ><i class="fa-regular fa-heart"></i></button>
+                        <button ><i class="fa-solid fa-code-compare"></i></button>
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button>Add to cart</button>
+                        <h2>$86.00</h2>
+                    </div>
+                    <div class="slider_item">
                         <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><a
                             href="#">Placemats</a><br>
                         <a href="#">Lorem ipsum dolor sit amet.</a>
@@ -231,7 +407,7 @@
                         <button>Add to cart</button>
                         <h2>$86.00</h2>
                     </div>
-                    <div class="products-carousel_container_item">
+                    <div class="slider_item">
                         <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><a
                             href="#">Placemats</a><br>
                         <a href="#">Lorem ipsum dolor sit amet.</a>
@@ -241,7 +417,7 @@
                         <button>Add to cart</button>
                         <h2>$86.00</h2>
                     </div>
-                    <div class="products-carousel_container_item">
+                    <div class="slider_item">
                         <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><a
                             href="#">Placemats</a><br>
                         <a href="#">Lorem ipsum dolor sit amet.</a>
@@ -251,7 +427,7 @@
                         <button>Add to cart</button>
                         <h2>$86.00</h2>
                     </div>
-                    <div class="products-carousel_container_item">
+                    <div class="slider_item">
                         <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><a
                             href="#">Placemats</a><br>
                         <a href="#">Lorem ipsum dolor sit amet.</a>
@@ -261,7 +437,7 @@
                         <button>Add to cart</button>
                         <h2>$86.00</h2>
                     </div>
-                    <div class="products-carousel_container_item">
+                    <div class="slider_item">
                         <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><a
                             href="#">Placemats</a><br>
                         <a href="#">Lorem ipsum dolor sit amet.</a>
@@ -269,66 +445,280 @@
                         <button ><i class="fa-solid fa-code-compare"></i></button>
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
                         <button>Add to cart</button>
-                        <h2>$86.00</h2>
+                        <h2>$86.00</h2>      
                     </div>
-                    <div class="products-carousel_container_item">
-                        <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><a
-                            href="#">Placemats</a><br>
-                        <a href="#">Lorem ipsum dolor sit amet.</a>
-                        <button ><i class="fa-regular fa-heart"></i></button>
-                        <button ><i class="fa-solid fa-code-compare"></i></button>
-                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <button>Add to cart</button>
-                        <h2>$86.00</h2>
-                    </div>
-                    <div class="products-carousel_container_item">
-                        <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><a
-                            href="#">Placemats</a><br>
-                        <a href="#">Lorem ipsum dolor sit amet.</a>
-                        <button ><i class="fa-regular fa-heart"></i></button>
-                        <button ><i class="fa-solid fa-code-compare"></i></button>
-                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <button>Add to cart</button>
-                        <h2>$86.00</h2>
-                    </div>
-                    <div class="products-carousel_container_item">
-                        <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><a
-                            href="#">Placemats</a><br>
-                        <a href="#">Lorem ipsum dolor sit amet.</a>
-                        <button ><i class="fa-regular fa-heart"></i></button>
-                        <button ><i class="fa-solid fa-code-compare"></i></button>
-                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <button>Add to cart</button>
-                        <h2>$86.00</h2>
-                    </div>
-                </div>
             </div>
     </section>
+
+
+    <section class="underslick">
+        <div class="box">
+            <div class="item">
+                <h1>Cutlery</h1>
+                <a href="#">Shop Now</a>
+            </div>
+            <div class="item">
+                <h1>Apron</h1>
+                <a href="#">Shop Now</a>
+            </div>
+            <div class="item">
+                <h1>Napkins</h1>
+                <a href="#">Shop Now</a>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="item">
+                <h1>Pitchers</h1>
+                <a href="#">Shop Now</a>
+            </div>
+            <div class="item">
+                <h1>Dinnerware</h1>
+                <a href="#">Shop Now</a>
+            </div>
+            <div class="item">
+                <h1>Accesories</h1>
+                <a href="#">Shop Now</a>
+            </div>
+        </div>
+    </section>
+    <section class="double-carousel">
+        <h1>New Arrivals Products</h1>
+        <h3>Accumsan vitae pede lacus ut ullamcorper sollicitudin quisque libero est.</h3>
+        <div class="links">
+            <a href="">GLASSWARE</a>
+            <a href="">PLACEMATS</a>
+            <a href="">CUTLERY</a>
+            <a href="">NAPKINS</a>
+        </div>
+
+        <div class="two-rows-slider">
+            <div class="slider_item">
+                <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><br>
+                <a href="#">Placemats</a><br>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <button id="heart"><i class="fa-regular fa-heart"></i></button>
+                <button id="compare"><i class="fa-solid fa-code-compare"></i></button>
+                <button id="loop"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="add">Add to cart</button>
+                <h2>$86.00</h2>
+            </div>
+            <div class="slider_item">
+                <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><br>
+                <a href="#">Placemats</a><br>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <button id="heart"><i class="fa-regular fa-heart"></i></button>
+                <button id="compare"><i class="fa-solid fa-code-compare"></i></button>
+                <button id="loop"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="add">Add to cart</button>
+                <h2>$86.00</h2>
+            </div>
+            <div class="slider_item">
+                <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><br>
+                <a href="#">Placemats</a><br>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <button id="heart"><i class="fa-regular fa-heart"></i></button>
+                <button id="compare"><i class="fa-solid fa-code-compare"></i></button>
+                <button id="loop"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="add">Add to cart</button>
+                <h2>$86.00</h2>
+            </div>
+            <div class="slider_item">
+                <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><br>
+                <a href="#">Placemats</a><br>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <button id="heart"><i class="fa-regular fa-heart"></i></button>
+                <button id="compare"><i class="fa-solid fa-code-compare"></i></button>
+                <button id="loop"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="add">Add to cart</button>
+                <h2>$86.00</h2>
+            </div>
+            <div class="slider_item">
+                <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><br>
+                <a href="#">Placemats</a><br>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <button id="heart"><i class="fa-regular fa-heart"></i></button>
+                <button id="compare"><i class="fa-solid fa-code-compare"></i></button>
+                <button id="loop"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="add">Add to cart</button>
+                <h2>$86.00</h2>
+            </div>
+            <div class="slider_item">
+                <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><br>
+                <a href="#">Placemats</a><br>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <button id="heart"><i class="fa-regular fa-heart"></i></button>
+                <button id="compare"><i class="fa-solid fa-code-compare"></i></button>
+                <button id="loop"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="add">Add to cart</button>
+                <h2>$86.00</h2>
+            </div>
+            <div class="slider_item">
+                <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><br>
+                <a href="#">Placemats</a><br>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <button id="heart"><i class="fa-regular fa-heart"></i></button>
+                <button id="compare"><i class="fa-solid fa-code-compare"></i></button>
+                <button id="loop"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="add">Add to cart</button>
+                <h2>$86.00</h2>
+            </div>
+            <div class="slider_item">
+                <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><br>
+                <a href="#">Placemats</a><br>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <button id="heart"><i class="fa-regular fa-heart"></i></button>
+                <button id="compare"><i class="fa-solid fa-code-compare"></i></button>
+                <button id="loop"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="add">Add to cart</button>
+                <h2>$86.00</h2>
+            </div>
+            <div class="slider_item">
+                <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><br>
+                <a href="#">Placemats</a><br>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <button id="heart"><i class="fa-regular fa-heart"></i></button>
+                <button id="compare"><i class="fa-solid fa-code-compare"></i></button>
+                <button id="loop"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="add">Add to cart</button>
+                <h2>$86.00</h2>
+            </div>
+            <div class="slider_item">
+                <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><br>
+                <a href="#">Placemats</a><br>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <button id="heart"><i class="fa-regular fa-heart"></i></button>
+                <button id="compare"><i class="fa-solid fa-code-compare"></i></button>
+                <button id="loop"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="add">Add to cart</button>
+                <h2>$86.00</h2>
+            </div>
+            <div class="slider_item">
+                <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><br>
+                <a href="#">Placemats</a><br>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <button id="heart"><i class="fa-regular fa-heart"></i></button>
+                <button id="compare"><i class="fa-solid fa-code-compare"></i></button>
+                <button id="loop"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="add">Add to cart</button>
+                <h2>$86.00</h2>
+            </div>
+            <div class="slider_item">
+                <img src="http://debaco.mallthemes.com/wp-content/uploads/2019/01/3-1products-400x400.jpg" alt=""><br>
+                <a href="#">Placemats</a><br>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <button id="heart"><i class="fa-regular fa-heart"></i></button>
+                <button id="compare"><i class="fa-solid fa-code-compare"></i></button>
+                <button id="loop"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="add">Add to cart</button>
+                <h2>$86.00</h2>
+            </div>
+            
+        </div>
+        <br><br><hr>
+    </section>
+
+    <section class="prefooter">
+        <h1>Follow us On Instagram</h1>
+        <h3>Displays an Instagram feed of your photos from your Instagram account on your website.</h3>
+    </section>
+    <div class="back-top">
+        <a href="#">🞁</a>
+    </div>
+    <footer>
+        <div class="info-wraper">
+        <div class="info">
+            <img src="http://debaco.mallthemes.com/wp-content/uploads/2018/12/logow.png" alt="">
+            <p>We are a team of designers and developers that create</p>
+            <p>high quality Magento, WordPress, Prestashop, Opencart</p>
+
+            <p><b>ADDRESS: </b>6688 Princess Road, London, Greater London BAS 23JK, UK</p>
+            <p> <b>PHONE:</b>(012) 800 456 789-987</p>
+            <p> <b>EMAIL:</b>Contact@plazathemes.com</p>
+        </div>
+        <div class="info">
+            <h4>Customer Care</h4>
+            <ul>
+                <li><a href="">My account</a></li>
+                <li><a href="">Cart</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Wishlist</a></li>
+                <li><a href="">Checkout</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <h4>Information</h4>
+            <ul>
+                <li><a href="">About US</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Cart</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Wishlist</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <h4>Join Our Newsletter Now</h4>
+            <p>Get E-mail updates about our latest shop and special offers.</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Enter your email here.."><button>SUBSCRIBE!</button>
+            </div>
+            <ul>
+                <li><a href="" class="fb"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="" class="tw"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="" class="inst"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="" class="in"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="" class="rss"><i class="fa-solid fa-square-rss"></i></a></li>
+            </ul>
+        </div>
+    </div>
+<hr>
+        <div class="copyright">
+            <p>Copyright © 2019 RoadThemes. All Rights Reserved</p>
+            <img src="http://debaco.mallthemes.com/wp-content/uploads/2018/12/payment.png" alt="">
+        </div>
+    </footer>
     
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="slick.min.js"></script> 
     <script>
         $(document).ready(function () {
-            $('.carousel').slick({
+            $('.slider').slick({
+                vertical:false,
                 infinite: true,
                 slidesToShow: 4,
                 slidesToScroll: 1,
 
                 responsive: [{
-                    breakpoint: 750,
+                    breakpoint: 1000,
                     settings: {
-                        slidesToShow: 3,
+                        slidesToShow: 2,
                         slidesToScroll: 1,
-                        vertical: true,
-                        verticalSwiping: true
+                    }
+                }]
+            })
+        });
+        $(document).ready(function () {
+            $('.two-rows-slider').slick({
+                vertical:false,
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                rows:2,
+                
+
+
+                responsive: [{
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
                     }
                 }]
             })
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
 </html>
